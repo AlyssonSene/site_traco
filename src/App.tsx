@@ -1,7 +1,8 @@
 import React from 'react'
+import HomePage from './pages/Home/HomePage'
 
 const App: React.FC = () => {
-	return <>Site Traço</>
+	return <HomePage />
 }
 
 export default App
