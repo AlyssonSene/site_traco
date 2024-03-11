@@ -12,3 +12,7 @@ export interface IButton {
 	text: string
 	onClick?: () => void
 }
+
+export interface IProducts {
+	$typeBorder?: 'package1' | 'package2'
+}
