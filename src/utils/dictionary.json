@@ -1,0 +1,31 @@
+{
+  "products": [
+   {
+    "title":"Pacote 1",
+    "name":"O Despertar",
+    "value": 4200,
+    "startDate": "1º semestre de 2024 - Abril a Julho",
+    "package": {
+      "benefits1": "4 formações para professores, gestores e time pedagógico",
+      "benefits2": "4 horas de consultoria individualizada",
+      "benefits3": "2 formações para estudantes",
+      "benefits4": "4 desafios de implementação com acompanhamento mensal"
+    },
+      "description": "As formações serão realizadas entre os meses de Abril e Julho de 2024 de acordo com o calendário exposto acima"
+  },
+  {
+    "title":"Pacote 2",
+    "name":"O Despertar + Aprofundamento",
+    "value": 6200,
+    "startDate": "1º semestre de 2024 - Abril a Novembro",
+    "package": {
+      "benefits1": "8 formações para professores, gestores e time pedagógico",
+    "benefits2": "8 horas de consultoria individualizada",
+    "benefits3": "4 formações para estudantes",
+    "benefits4": "8 desafios de implementação com acompanhamento mensal"
+    },
+    "description": "As formações serão realizadas entre os meses de Abril e novembro de 2024 de acordo com o calendário exposto acima"
+  }]
+
+
+}

@@ -1,4 +1,5 @@
 import arrowRight from './arrowRight.svg'
+import checkmark from './checkIcon.svg'
 import emailIcon from './emailIcon.svg'
 import facebookIcon from './facebookIcon.svg'
 import instagramIcon from './instagramIcon.svg'
@@ -17,5 +18,6 @@ export const icons = {
   playerIcon,
   arrowRight,
   soonIcon,
-  traco }
+  traco,
+  checkmark }
 

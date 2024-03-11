@@ -33,7 +33,6 @@ export const CenterContainer = styled.div`
 export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
 	video {
 		width: 80%;
 		height: auto;
@@ -105,7 +104,7 @@ export const ButtonsContainer = styled.div`
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	margin: 60px;
+	margin-top: 60px;
 `
 
 export const AboutMoreButton = styled.div`
