@@ -7,3 +7,8 @@ export interface ITextAtom {
 	type: string
 	text: string
 }
+
+export interface IButton {
+	text: string
+	onClick?: () => void
+}
