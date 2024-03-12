@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import * as C from '../../styles/descriptionStyles'
 import TextAtom from '../atoms/TextAtom'
+import CommitmentMolecule from './CommitmentMolecule'
 import DescriptionMolecule from './DescriptionMolecule'
+import MotivationMolecule from './MotivationMolecule'
 
 const ProductsDescriptionMolecule: React.FC = () => {
 	const [selectDes, setSelectDes] = useState(true)
@@ -41,6 +43,8 @@ const ProductsDescriptionMolecule: React.FC = () => {
 			</C.HeaderDescription>
 			<C.OptionsContainer>
 				{selectDes && <DescriptionMolecule />}
+				{selectMot && <MotivationMolecule />}
+				{selectComp && <CommitmentMolecule />}
 			</C.OptionsContainer>
 		</C.DescriptionContainer>
 	)

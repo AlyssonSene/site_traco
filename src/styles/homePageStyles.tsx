@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
 export const CenterContainer = styled.div`
 	width: 100%;
 	height: 1040px;
-	margin: 0 32px;
+	margin: 0 60px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

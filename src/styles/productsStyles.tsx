@@ -5,7 +5,7 @@ export const ProductsContainer = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 120px;
+	margin: 120px 0;
 `
 
 export const TitleContainer = styled.div`

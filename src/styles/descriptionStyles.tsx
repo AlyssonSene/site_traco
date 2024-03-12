@@ -17,6 +17,7 @@ export const HeaderDescription = styled.div`
 	align-items: flex-end;
 	width: 100%;
 	height: 90px;
+	margin-bottom: 24px;
 `
 
 export const HeaderOptions = styled.div<IHeaderOption>`
@@ -74,7 +75,7 @@ export const SubtitleDiv = styled.div`
 
 export const OptionsContainer = styled.div`
 	display: flex;
-	margin: 32px;
+	padding: 32px;
 `
 
 export const BenefitsDiv = styled.div`
