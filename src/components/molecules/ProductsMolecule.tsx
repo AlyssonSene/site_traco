@@ -1,7 +1,7 @@
 import React from 'react'
 import { icons } from '../../assets'
 import { ICard } from '../../interfaces/atomsInterfaces'
-import * as C from '../../styles/ProductsStyles'
+import * as C from '../../styles/productsStyles'
 import ButtonAtom from '../atoms/ButtonAtom'
 import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'

@@ -5,12 +5,12 @@ export const ProductsContainer = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	width: 80%;
 	margin-top: 120px;
 `
 
 export const TitleContainer = styled.div`
 	display: flex;
+	margin-bottom: 79px;
 	h1 {
 		color: #1f2325;
 		text-align: center;
@@ -38,7 +38,8 @@ export const TitleContainer = styled.div`
 export const CardsContainer = styled.div`
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
 `
 
 export const Products = styled.div<IProducts>`
@@ -47,7 +48,6 @@ export const Products = styled.div<IProducts>`
 	width: 352px;
 	height: 867px;
 	border-radius: 24px;
-	margin: 79px 32px;
 
 	${({ $typeBorder }) =>
 		$typeBorder == 'package1' &&

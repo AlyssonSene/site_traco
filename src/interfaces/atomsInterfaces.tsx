@@ -33,3 +33,7 @@ export interface ICard {
 	$typeBorder?: 'package1' | 'package2'
 	data: objectData
 }
+
+export interface IHeaderOption {
+	$isSelected?: boolean
+}

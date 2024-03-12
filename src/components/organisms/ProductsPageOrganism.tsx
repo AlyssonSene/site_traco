@@ -1,7 +1,8 @@
 import React from 'react'
-import * as C from '../../styles/ProductsStyles'
+import * as C from '../../styles/productsStyles'
 import data from '../../utils/dictionary.json'
 import TextAtom from '../atoms/TextAtom'
+import ProductsDescriptionMolecule from '../molecules/ProductsDescriptionMolecule'
 import ProductsMolecule from '../molecules/ProductsMolecule'
 
 const ProductsPageOrganism: React.FC = () => {
@@ -30,6 +31,7 @@ const ProductsPageOrganism: React.FC = () => {
 					startDate={data.products[1].startDate}
 					data={data.products[1].package}
 				/>
+				<ProductsDescriptionMolecule />
 			</C.CardsContainer>
 		</C.ProductsContainer>
 	)
