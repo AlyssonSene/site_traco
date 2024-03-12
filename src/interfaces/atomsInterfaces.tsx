@@ -37,3 +37,9 @@ export interface ICard {
 export interface IHeaderOption {
 	$isSelected?: boolean
 }
+
+export interface ICards {
+	url: string
+	title: string
+	text: string
+}

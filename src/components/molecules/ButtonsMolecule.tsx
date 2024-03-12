@@ -14,10 +14,7 @@ const ButtonsMolecule: React.FC = () => {
 		<ButtonsContainer>
 			<AboutMoreButton>
 				<ImageAtom alt='arrow right' url={icons.arrowRight} />
-				<ButtonAtom
-					text='Conheça nossos produtos'
-					onClick={() => console.log('clicou')}
-				/>
+				<ButtonAtom text='Conheça nossos produtos' />
 			</AboutMoreButton>
 			<PodcastButton>
 				<ImageAtom alt='arrow right' url={icons.playerIcon} />

@@ -1,5 +1,6 @@
 import React from 'react'
 import HomePageOrganism from '../../components/organisms/HomePageOrganism'
+import KnowMoreOrganismo from '../../components/organisms/KnowMoreOrganismo'
 import ProductsPageOrganism from '../../components/organisms/ProductsPageOrganism'
 
 const HomePage: React.FC = () => {
@@ -7,6 +8,7 @@ const HomePage: React.FC = () => {
 		<>
 			<HomePageOrganism />
 			<ProductsPageOrganism />
+			<KnowMoreOrganismo />
 		</>
 	)
 }

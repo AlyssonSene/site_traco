@@ -65,7 +65,6 @@ export const SloganContainer = styled.div`
 	margin-top: 68px;
 	display: flex;
 	text-align: center;
-	align-content: flex-end;
 	flex-direction: column;
 	width: 70%;
 	position: relative;
