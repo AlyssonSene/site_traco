@@ -33,8 +33,14 @@ export const CenterContainer = styled.div`
 export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
+	div {
+		div {
+			border-radius: 16px !important;
+		}
+	}
 	video {
-		width: 80%;
+		cursor: pointer;
+		width: 100%;
 		height: auto;
 		border-radius: 16px;
 	}

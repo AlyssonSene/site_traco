@@ -56,9 +56,8 @@ export const TitleContainer = styled.div`
 
 export const CardsContainer = styled.div`
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-evenly;
-	width: 80%;
+	width: 90%;
 	margin-bottom: 32px;
 `
 

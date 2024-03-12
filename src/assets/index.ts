@@ -16,6 +16,7 @@ import soonIcon from './soonIcon.svg'
 import traco from './traco.svg'
 import tracoIcon from './tracoIcon.svg'
 import vetorImage from './vetor.svg'
+import videoPlayer from './videoPlayer.svg'
 
 export const icons = { 
   emailIcon,
@@ -35,6 +36,7 @@ export const icons = {
   guitar,
   path,
   chatBar,
-  graph
+  graph,
+  videoPlayer
  }
 
