@@ -1,9 +1,12 @@
+import Lightbulb from './Lightbulb.svg'
 import arrowRight from './arrowRight.svg'
+import background from './background.svg'
 import boxIcon from './boxIcon.svg'
 import brush from './brush.svg'
 import chatBar from './chatBar.svg'
 import checkIcon from './checkIcon.svg'
 import checkmark from './checkmark.svg'
+import elipse from './elipse.svg'
 import emailIcon from './emailIcon.svg'
 import facebookIcon from './facebookIcon.svg'
 import graph from './graph.svg'
@@ -17,6 +20,8 @@ import soonIcon from './soonIcon.svg'
 import traco from './traco.svg'
 import tracoIcon from './tracoIcon.svg'
 import vetorImage from './vetor.svg'
+import vetor2 from './vetor2.svg'
+import vetor3 from './vetor3.svg'
 import videoPlayer from './videoPlayer.svg'
 
 export const icons = { 
@@ -39,6 +44,11 @@ export const icons = {
   chatBar,
   graph,
   videoPlayer,
-  checkIcon
+  checkIcon, 
+  background,
+  vetor2,
+  vetor3,
+  Lightbulb,
+  elipse
  }
 

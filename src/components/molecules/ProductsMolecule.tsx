@@ -48,10 +48,10 @@ const ProductsMolecule: React.FC<ICard> = ({
 							type={'span'}
 							styles={{
 								background:
-									'var(--Gradient-OrangePink, linear-gradient(134deg, #FF6307 -10.58%, #FA39B9 92.67%))',
-								'background-clip': 'text',
-								'-webkit-background-clip': 'text',
-								'-webkit-text-fill-color': 'transparent'
+									'var(--Gradient-OrangePink, linear-gradient(134deg, #ff8139 -10.58%, #FA39B9 92.67%))',
+								backgroundClip: 'text',
+								WebkitBackgroundCclip: 'text',
+								WebkitTextFillColor: 'transparent'
 							}}
 						/>
 					) : (
@@ -61,9 +61,9 @@ const ProductsMolecule: React.FC<ICard> = ({
 							styles={{
 								background:
 									'var(--Gradient-YellowGreen, linear-gradient(135deg, #F0E13A -5.84%, #17E58A 107.59%))',
-								'background-clip': 'text',
-								'-webkit-background-clip': 'text',
-								'-webkit-text-fill-color': 'transparent'
+								backgroundClip: 'text',
+								WebkitBackgroundCclip: 'text',
+								WebkitTextFillColor: 'transparent'
 							}}
 						/>
 					)}

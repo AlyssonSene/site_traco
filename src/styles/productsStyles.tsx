@@ -120,10 +120,6 @@ export const ProductValue = styled.div`
 			font-weight: 600;
 			line-height: normal;
 			text-transform: uppercase;
-
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
 		}
 		h2 {
 			color: #1f2325;

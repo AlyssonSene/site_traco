@@ -1,16 +1,23 @@
 import styled from 'styled-components'
 import background from '../assets/background.svg'
 
+export const MainPage = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
+
 export const HomeContainer = styled.div`
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 `
 
 export const CenterContainer = styled.div`
 	width: 100%;
 	height: 1040px;
-	margin: 0 60px;
+	margin: 0 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -33,9 +40,15 @@ export const CenterContainer = styled.div`
 export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	width: 1275px;
+	height: 742px;
+	border-radius: 26px;
+	background: rgba(33, 36, 41, 0.2);
+	position: relative;
 	div {
 		div {
-			border-radius: 16px !important;
+			border-radius: 26px !important;
 		}
 	}
 	video {
