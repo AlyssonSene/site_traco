@@ -48,13 +48,11 @@ export const VideoContainer = styled.div`
 	position: relative;
 	div {
 		div {
-			border-radius: 26px !important;
+			border-radius: 16px !important;
 		}
 	}
-	video {
+	iframe {
 		cursor: pointer;
-		width: 100%;
-		height: auto;
 		border-radius: 16px;
 	}
 `
