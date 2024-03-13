@@ -6,6 +6,7 @@ export interface IImageAtom {
 export interface ITextAtom {
 	type: string
 	text: string
+	styles?: {}
 }
 
 export interface IButton {
@@ -32,6 +33,8 @@ export interface ICard {
 	description: string
 	$typeBorder?: 'package1' | 'package2'
 	data: objectData
+	checkmark: string
+	paymentType: string
 }
 
 export interface IHeaderOption {
@@ -42,4 +45,8 @@ export interface ICards {
 	url: string
 	title: string
 	text: string
+}
+
+export interface IProduct {
+	color: string
 }

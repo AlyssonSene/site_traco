@@ -2,7 +2,8 @@ import arrowRight from './arrowRight.svg'
 import boxIcon from './boxIcon.svg'
 import brush from './brush.svg'
 import chatBar from './chatBar.svg'
-import checkmark from './checkIcon.svg'
+import checkIcon from './checkIcon.svg'
+import checkmark from './checkmark.svg'
 import emailIcon from './emailIcon.svg'
 import facebookIcon from './facebookIcon.svg'
 import graph from './graph.svg'
@@ -37,6 +38,7 @@ export const icons = {
   path,
   chatBar,
   graph,
-  videoPlayer
+  videoPlayer,
+  checkIcon
  }
 

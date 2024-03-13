@@ -1,4 +1,5 @@
 import React from 'react'
+import { icons } from '../../assets'
 import * as C from '../../styles/productsStyles'
 import data from '../../utils/dictionary.json'
 import TextAtom from '../atoms/TextAtom'
@@ -14,6 +15,8 @@ const ProductsPageOrganism: React.FC = () => {
 			</C.TitleContainer>
 			<C.CardsContainer>
 				<ProductsMolecule
+					paymentType={'R$ 700,00/mês parcelados em até 6x'}
+					checkmark={icons.checkIcon}
 					$typeBorder={'package1'}
 					title={data.products[0].title}
 					description={data.products[0].description}
@@ -23,6 +26,8 @@ const ProductsPageOrganism: React.FC = () => {
 					data={data.products[0].package}
 				/>
 				<ProductsMolecule
+					paymentType={'R$ 620,00/mês parcelados em até 10x'}
+					checkmark={icons.checkmark}
 					$typeBorder={'package2'}
 					title={data.products[1].title}
 					description={data.products[1].description}

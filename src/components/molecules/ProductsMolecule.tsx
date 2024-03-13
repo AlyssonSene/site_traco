@@ -1,5 +1,4 @@
 import React from 'react'
-import { icons } from '../../assets'
 import { ICard } from '../../interfaces/atomsInterfaces'
 import * as C from '../../styles/productsStyles'
 import ButtonAtom from '../atoms/ButtonAtom'
@@ -13,7 +12,9 @@ const ProductsMolecule: React.FC<ICard> = ({
 	value,
 	startDate,
 	$typeBorder,
-	data
+	data,
+	checkmark,
+	paymentType
 }) => {
 	return (
 		<C.Products $typeBorder={$typeBorder}>
@@ -21,11 +22,51 @@ const ProductsMolecule: React.FC<ICard> = ({
 				<TextAtom text={title} type={'h1'} />
 			</C.ProductTitle>
 			<C.ProductName>
-				<TextAtom text={name} type={'h3'} />
+				{$typeBorder == 'package1' ? (
+					<TextAtom
+						text={name}
+						type={'h3'}
+						styles={{
+							color: '#FF650A'
+						}}
+					/>
+				) : (
+					<TextAtom
+						text={name}
+						type={'h3'}
+						styles={{
+							color: '#0FBF71'
+						}}
+					/>
+				)}
 			</C.ProductName>
 			<C.ProductValue>
 				<div>
-					<TextAtom text={'R$'} type={'span'} />
+					{$typeBorder == 'package1' ? (
+						<TextAtom
+							text={'R$'}
+							type={'span'}
+							styles={{
+								background:
+									'var(--Gradient-OrangePink, linear-gradient(134deg, #FF6307 -10.58%, #FA39B9 92.67%))',
+								'background-clip': 'text',
+								'-webkit-background-clip': 'text',
+								'-webkit-text-fill-color': 'transparent'
+							}}
+						/>
+					) : (
+						<TextAtom
+							text={'R$'}
+							type={'span'}
+							styles={{
+								background:
+									'var(--Gradient-YellowGreen, linear-gradient(135deg, #F0E13A -5.84%, #17E58A 107.59%))',
+								'background-clip': 'text',
+								'-webkit-background-clip': 'text',
+								'-webkit-text-fill-color': 'transparent'
+							}}
+						/>
+					)}
 					<TextAtom
 						text={value.toLocaleString('pt-BR', {
 							style: 'decimal',
@@ -36,7 +77,7 @@ const ProductsMolecule: React.FC<ICard> = ({
 					/>
 					<TextAtom text={'ou'} type={'h5'} />
 				</div>
-				<TextAtom text={'R$ 700,00/mês parcelados em até 6x'} type={'h5'} />
+				<TextAtom text={paymentType} type={'h5'} />
 			</C.ProductValue>
 			<C.Line />
 			<C.ProductStartDate>
@@ -44,19 +85,19 @@ const ProductsMolecule: React.FC<ICard> = ({
 			</C.ProductStartDate>
 			<C.BenefitsContainer>
 				<div>
-					<ImageAtom alt='checkmark' url={icons.checkmark} />
+					<ImageAtom alt='checkmark' url={checkmark} />
 					<TextAtom text={data.benefits1} type={'span'} />
 				</div>
 				<div>
-					<ImageAtom alt='checkmark' url={icons.checkmark} />
+					<ImageAtom alt='checkmark' url={checkmark} />
 					<TextAtom text={data.benefits2} type={'span'} />
 				</div>
 				<div>
-					<ImageAtom alt='checkmark' url={icons.checkmark} />
+					<ImageAtom alt='checkmark' url={checkmark} />
 					<TextAtom text={data.benefits3} type={'span'} />
 				</div>
 				<div>
-					<ImageAtom alt='checkmark' url={icons.checkmark} />
+					<ImageAtom alt='checkmark' url={checkmark} />
 					<TextAtom text={data.benefits4} type={'span'} />
 				</div>
 			</C.BenefitsContainer>

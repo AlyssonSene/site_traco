@@ -120,7 +120,7 @@ export const ProductValue = styled.div`
 			font-weight: 600;
 			line-height: normal;
 			text-transform: uppercase;
-			background: linear-gradient(134deg, #ff6307 -10.58%, #fa39b9 92.67%);
+
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;

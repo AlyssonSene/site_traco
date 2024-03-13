@@ -18,7 +18,7 @@ const MotivationMolecule: React.FC = () => {
 				<TextAtom text={'Comodidade para as famílias'} type={'h4'} />
 				<TextAtom
 					text={
-						'Um local de confiança e segurança para as famílias deixarem seus filhos  e que garante aos alunos a possibilidade de aprender, desenvolver, fazer melhores escolhas e construir o seu futuro de forma brilhante.'
+						'Um local de confiança e segurança para as famílias deixarem seus filhos e que garante aos alunos a possibilidade de aprender, desenvolver, fazer melhores escolhas e construir o seu futuro de forma brilhante.'
 					}
 					type={'span'}
 				/>
