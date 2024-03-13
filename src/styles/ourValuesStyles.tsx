@@ -9,8 +9,8 @@ export const MainContainer = styled.div`
 	height: 1246px;
 	margin: 0 50px;
 	border-radius: 24px;
-	background: url(${icons.vetor2}) #fff8fc;
-	background-repeat: space;
+	background: url(${icons.vetor2}) #f8e8f2;
+	background-repeat: round;
 `
 
 export const Header = styled.div`
