@@ -50,3 +50,15 @@ export interface ICards {
 export interface IProduct {
 	color: string
 }
+
+export interface ITraces {
+	title: string
+	text: string
+	urlIcon: string
+	onClick?: () => void
+	selected: boolean
+}
+
+export interface ITraceCard {
+	$isSelected: boolean
+}
