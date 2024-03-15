@@ -13,7 +13,7 @@ const TracesMolecule: React.FC<ITraces> = ({
 }) => {
 	return (
 		<C.TraceCards onClick={onClick} $isSelected={selected}>
-			<C.EmojContainer>
+			<C.EmojContainer $isSelected={selected}>
 				<ImageAtom url={urlIcon} alt={'emoji'} />
 			</C.EmojContainer>
 			<C.TextContainer>

@@ -88,7 +88,7 @@ export const VideoContainer = styled.div`
 	background: rgba(58, 66, 80, 0.2);
 `
 
-export const Line = styled.div`
+export const Line = styled.div<ITraceCard>`
 	width: 4px;
 	height: 24px;
 	background-image: linear-gradient(to bottom, #d0d9e5, 3px, transparent 4px);
@@ -96,6 +96,11 @@ export const Line = styled.div`
 	background-position:
 		0 0,
 		4px 4px;
+	${({ $isSelected }) =>
+		$isSelected &&
+		`
+		background-image: linear-gradient(to bottom, #FA39B9, 3px, transparent 4px);
+		`}
 `
 
 export const TraceCards = styled.div<ITraceCard>`
@@ -112,16 +117,16 @@ export const TraceCards = styled.div<ITraceCard>`
 			border-radius: 24px;
 			border: 1px solid #FA39B9;
 			background: #FFECF8;
-    `}
+  `}
 `
 
-export const EmojContainer = styled.div`
+export const EmojContainer = styled.div<ITraceCard>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 80px;
 	height: 80px;
-	background: #ffcbed;
+	background: #d0d9e5;
 	border-radius: 50%;
 	margin: 0 48px;
 	img {
@@ -129,6 +134,11 @@ export const EmojContainer = styled.div`
 		width: 40px;
 		height: 40px;
 	}
+	${({ $isSelected }) =>
+		$isSelected &&
+		`
+			background: #FFCBED;
+  `}
 `
 export const TextContainer = styled.div`
 	width: 782px;
