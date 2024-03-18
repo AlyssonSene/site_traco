@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { icons } from '../assets'
+import { icons } from '../assets/icons'
 
 export const MainContainer = styled.div`
 	display: flex;

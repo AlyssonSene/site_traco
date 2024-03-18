@@ -70,5 +70,5 @@ export interface IPlayer {
 
 export interface IVideoModal {
 	url: string
-	showModal: boolean
+	thumb: string
 }

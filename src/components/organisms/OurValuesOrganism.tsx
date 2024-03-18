@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import { icons } from '../../assets'
-import thumb from '../../assets/image3.png'
+import { icons } from '../../assets/icons'
+import thumb from '../../assets/images/image3.png'
 import * as C from '../../styles/ourValuesStyles'
 import ImageAtom from '../atoms/ImageAtom'
 import PlayerAtom from '../atoms/PlayerAtom'
@@ -39,7 +39,7 @@ const OurValuesOrganism: React.FC = () => {
 					height={'711px'}
 					url={'https://www.youtube.com/watch?v=t6J85pTCHZE'}
 					controls={true}
-					playIcon={<PlayerAtom />}
+					playIcon={<PlayerAtom icon={icons.videoPlayer} />}
 					playing={true}
 					light={thumb}
 				/>

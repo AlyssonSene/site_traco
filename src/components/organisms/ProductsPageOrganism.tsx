@@ -1,5 +1,5 @@
 import React from 'react'
-import { icons } from '../../assets'
+import { icons } from '../../assets/icons'
 import * as C from '../../styles/productsStyles'
 import data from '../../utils/dictionary.json'
 import TextAtom from '../atoms/TextAtom'

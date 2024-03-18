@@ -1,5 +1,5 @@
 import React from 'react'
-import traco from '../../assets/traco.svg'
+import traco from '../../assets/icons/traco.svg'
 import { SloganContainer, Traco } from '../../styles/homePageStyles'
 import TextAtom from '../atoms/TextAtom'
 

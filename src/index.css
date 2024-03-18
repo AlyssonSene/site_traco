@@ -14,3 +14,11 @@ html::-webkit-scrollbar {
 	width: 0;
 	height: 0;
 }
+
+.modal-content {
+	border-radius: 26px !important;
+}
+
+iframe {
+	border-radius: 16px;
+}

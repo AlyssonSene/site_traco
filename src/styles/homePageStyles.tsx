@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../assets/background.svg'
+import background from '../assets/icons/background.svg'
 
 export const MainPage = styled.div`
 	display: flex;
@@ -46,6 +46,9 @@ export const VideoContainer = styled.div`
 	border-radius: 26px;
 	background: rgba(33, 36, 41, 0.2);
 	position: relative;
+	img {
+		border-radius: 16px;
+	}
 	div {
 		div {
 			border-radius: 16px !important;

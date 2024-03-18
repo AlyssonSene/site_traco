@@ -1,5 +1,5 @@
 import React from 'react'
-import { icons } from '../../assets'
+import { icons } from '../../assets/icons'
 import { SoonContainer } from '../../styles/homePageStyles'
 import ImageAtom from '../atoms/ImageAtom'
 

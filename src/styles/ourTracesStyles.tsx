@@ -106,6 +106,7 @@ export const CloseButton = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	filter: drop-shadow(0px 5px 10px rgba(47, 99, 163, 0.15));
 	span {
 		font-size: 19px;
 	}
@@ -127,6 +128,7 @@ export const Line = styled.div<ITraceCard>`
 `
 
 export const TraceCards = styled.div<ITraceCard>`
+	cursor: pointer;
 	width: 999px;
 	height: 168px;
 	display: flex;

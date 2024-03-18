@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import { icons } from '../../assets'
-import thumb from '../../assets/thumb.png'
+import { icons } from '../../assets/icons'
+import thumb from '../../assets/images/thumb.png'
 import * as C from '../../styles/homePageStyles'
 import PlayerAtom from '../atoms/PlayerAtom'
 

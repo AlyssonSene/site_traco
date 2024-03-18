@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { icons } from '../../assets'
+import { icons } from '../../assets/icons'
+import { images } from '../../assets/images'
 import * as C from '../../styles/ourTracesStyles'
 import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
@@ -15,6 +16,54 @@ const OurTracesOrganism: React.FC = () => {
 	const [line1, setLine1] = useState(true)
 	const [line2, setLine2] = useState(false)
 	const [line3, setLine3] = useState(false)
+	const [video, setVideo] = useState(
+		'https://www.youtube.com/watch?v=K_vmt4eGeVI'
+	)
+	const [thumb, setThumb] = useState(images.thumb_peace)
+
+	const handleVideo = (name: string) => {
+		if (name == 'Saúde emocional') {
+			setHealth(true)
+			setCitizenship(false)
+			setGender(false)
+			setPeace(false)
+			setLine1(true)
+			setLine2(false)
+			setLine3(false)
+			setVideo('https://www.youtube.com/watch?v=K_vmt4eGeVI')
+			setThumb(images.thumb_peace)
+		} else if (name == 'Promoção da cidadania') {
+			setHealth(false)
+			setCitizenship(true)
+			setGender(false)
+			setPeace(false)
+			setLine1(true)
+			setLine2(true)
+			setLine3(false)
+			setVideo('https://www.youtube.com/watch?v=EJkhJusI0N8')
+			setThumb(images.thumb_citizenship)
+		} else if (name == 'Equidade de gênero') {
+			setHealth(false)
+			setCitizenship(false)
+			setGender(true)
+			setPeace(false)
+			setLine1(false)
+			setLine2(true)
+			setLine3(true)
+			setVideo('https://www.youtube.com/watch?v=6WjQqnrbPMA')
+			setThumb(images.image4)
+		} else if ((name = 'Cultura de paz')) {
+			setHealth(false)
+			setCitizenship(false)
+			setGender(false)
+			setPeace(true)
+			setLine1(false)
+			setLine2(false)
+			setLine3(true)
+			setVideo('https://www.youtube.com/watch?v=GSry9ioLemY&t=1s')
+			setThumb(images.thumb_peace)
+		}
+	}
 
 	return (
 		<C.MainContainer>
@@ -38,13 +87,7 @@ const OurTracesOrganism: React.FC = () => {
 					<TracesMolecule
 						selected={health}
 						onClick={() => {
-							setHealth(true),
-								setCitizenship(false),
-								setGender(false),
-								setPeace(false),
-								setLine1(true),
-								setLine2(false),
-								setLine3(false)
+							handleVideo('Saúde emocional')
 						}}
 						title={'Saúde emocional'}
 						text={
@@ -55,13 +98,7 @@ const OurTracesOrganism: React.FC = () => {
 					<C.Line $isSelected={line1} />
 					<TracesMolecule
 						onClick={() => {
-							setHealth(false),
-								setCitizenship(true),
-								setGender(false),
-								setPeace(false),
-								setLine1(true),
-								setLine2(true),
-								setLine3(false)
+							handleVideo('Promoção da cidadania')
 						}}
 						selected={citizenship}
 						title={'Promoção da cidadania'}
@@ -73,13 +110,7 @@ const OurTracesOrganism: React.FC = () => {
 					<C.Line $isSelected={line2} />
 					<TracesMolecule
 						onClick={() => {
-							setHealth(false),
-								setCitizenship(false),
-								setGender(true),
-								setPeace(false),
-								setLine1(false),
-								setLine2(true),
-								setLine3(true)
+							handleVideo('Equidade de gênero')
 						}}
 						selected={gender}
 						title={'Equidade de gênero'}
@@ -91,13 +122,7 @@ const OurTracesOrganism: React.FC = () => {
 					<C.Line $isSelected={line3} />
 					<TracesMolecule
 						onClick={() => {
-							setHealth(false),
-								setCitizenship(false),
-								setGender(false),
-								setPeace(true),
-								setLine1(false),
-								setLine2(false),
-								setLine3(true)
+							handleVideo('Cultura de paz')
 						}}
 						selected={peace}
 						title={'Cultura de paz'}
@@ -108,7 +133,7 @@ const OurTracesOrganism: React.FC = () => {
 					/>
 				</C.TracesContainer>
 				<C.VideoContainer>
-					<VideoModalMolecule />
+					<VideoModalMolecule url={video} thumb={thumb} />
 				</C.VideoContainer>
 			</C.CenterContainer>
 		</C.MainContainer>

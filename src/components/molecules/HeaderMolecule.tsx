@@ -1,5 +1,5 @@
 import React from 'react'
-import { icons } from '../../assets'
+import { icons } from '../../assets/icons'
 import * as C from '../../styles/headerStyles'
 import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
