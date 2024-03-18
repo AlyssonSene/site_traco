@@ -1,6 +1,7 @@
 export interface IImageAtom {
 	url: string
 	alt: string
+	onClick?: () => void
 }
 
 export interface ITextAtom {
@@ -61,4 +62,13 @@ export interface ITraces {
 
 export interface ITraceCard {
 	$isSelected: boolean
+}
+
+export interface IPlayer {
+	icon: string
+}
+
+export interface IVideoModal {
+	url: string
+	showModal: boolean
 }

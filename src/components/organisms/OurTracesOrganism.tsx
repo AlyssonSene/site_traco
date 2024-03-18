@@ -4,6 +4,7 @@ import * as C from '../../styles/ourTracesStyles'
 import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
 import TracesMolecule from '../molecules/TracesMolecule'
+import VideoModalMolecule from '../molecules/VideoModalMolecule'
 
 const OurTracesOrganism: React.FC = () => {
 	const [health, setHealth] = useState(true)
@@ -106,7 +107,9 @@ const OurTracesOrganism: React.FC = () => {
 						urlIcon={peace ? icons.peace2 : icons.peace}
 					/>
 				</C.TracesContainer>
-				<C.VideoContainer></C.VideoContainer>
+				<C.VideoContainer>
+					<VideoModalMolecule />
+				</C.VideoContainer>
 			</C.CenterContainer>
 		</C.MainContainer>
 	)

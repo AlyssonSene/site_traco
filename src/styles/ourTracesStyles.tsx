@@ -82,10 +82,33 @@ export const TracesContainer = styled.div`
 export const VideoContainer = styled.div`
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 433px;
 	height: 744px;
 	border-radius: 26px;
 	background: rgba(58, 66, 80, 0.2);
+	cursor: pointer;
+	img {
+		width: 401px;
+		height: 712px;
+	}
+`
+
+export const CloseButton = styled.div`
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	margin: 4px 22px;
+	width: 32px;
+	height: 32px;
+	background: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	span {
+		font-size: 19px;
+	}
 `
 
 export const Line = styled.div<ITraceCard>`

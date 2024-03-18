@@ -1,9 +1,9 @@
 import React from 'react'
-import { icons } from '../../assets'
+import { IPlayer } from '../../interfaces/atomsInterfaces'
 import ImageAtom from './ImageAtom'
 
-const PlayerAtom: React.FC = () => {
-	return <ImageAtom url={icons.videoPlayer} alt={'player de video'} />
+const PlayerAtom: React.FC<IPlayer> = ({ icon }) => {
+	return <ImageAtom url={icon} alt={'player de video'} />
 }
 
 export default PlayerAtom

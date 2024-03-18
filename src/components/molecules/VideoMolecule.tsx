@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import { icons } from '../../assets'
 import thumb from '../../assets/thumb.png'
 import * as C from '../../styles/homePageStyles'
 import PlayerAtom from '../atoms/PlayerAtom'
@@ -12,7 +13,7 @@ const VideoMolecule: React.FC = () => {
 				height={'711px'}
 				url={'https://www.youtube.com/watch?v=apRlZCRtLuA'}
 				controls={true}
-				playIcon={<PlayerAtom />}
+				playIcon={<PlayerAtom icon={icons.videoPlayer} />}
 				playing={true}
 				light={thumb}
 			/>

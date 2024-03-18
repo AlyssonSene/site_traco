@@ -33,6 +33,7 @@ import vetor2 from './vetor2.svg'
 import vetor3 from './vetor3.svg'
 import vetor4 from './vetor4.svg'
 import videoPlayer from './videoPlayer.svg'
+import videoPlayer2 from './videoPlayer2.svg'
 
 export const icons = {
 	emailIcon,
@@ -69,5 +70,6 @@ export const icons = {
 	peace,
 	peace2,
 	gender,
-	gender2
+	gender2,
+	videoPlayer2
 }
