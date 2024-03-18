@@ -77,6 +77,7 @@ export const Cards = styled.div`
 	border-radius: 24px;
 	background: #f8e8f2;
 	padding: 32px 40px;
+	justify-content: space-between;
 `
 
 export const PerfilContainer = styled.div`
@@ -89,16 +90,16 @@ export const PerfilContainer = styled.div`
 	}
 	h5 {
 		color: #1f2325;
-		font-family: Inter;
-		font-size: 16px;
+		font-family: 'Inter';
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
 	}
 	span {
 		color: var(--Primary-Pink, #fa39b9);
-		font-family: Inter;
-		font-size: 14px;
+		font-family: 'Inter';
+		font-size: 15px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
@@ -108,7 +109,7 @@ export const TextCard = styled.div`
 	width: 400px;
 	span {
 		color: #68717e;
-		font-family: Inter;
+		font-family: 'Inter';
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 500;
