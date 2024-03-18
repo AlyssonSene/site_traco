@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
 	flex-direction: column;
 	margin-top: 115px;
 	width: auto;
-	height: 1559px;
+	height: 1359px;
 `
 
 export const Header = styled.div`

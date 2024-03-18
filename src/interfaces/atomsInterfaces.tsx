@@ -1,5 +1,5 @@
 export interface IImageAtom {
-	url: string
+	url?: string
 	alt: string
 	onClick?: () => void
 }
@@ -70,5 +70,13 @@ export interface IPlayer {
 
 export interface IVideoModal {
 	url: string
-	thumb: string
+	thumb?: string
+}
+
+export interface IFeedbackCards {
+	icon: string
+	text: string
+	url: string
+	name: string
+	post: string
 }

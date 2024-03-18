@@ -1,3 +1,4 @@
+import doubleQuotes from './ doubleQuotes.svg'
 import Lightbulb from './Lightbulb.svg'
 import arrowRight from './arrowRight.svg'
 import background from './background.svg'
@@ -9,6 +10,7 @@ import checkmark from './checkmark.svg'
 import elipse from './elipse.svg'
 import emailIcon from './emailIcon.svg'
 import facebookIcon from './facebookIcon.svg'
+import feedbackIcon from './feedbackIcon.svg'
 import gender from './gender.svg'
 import gender2 from './gender2.svg'
 import graph from './graph.svg'
@@ -32,6 +34,7 @@ import vetorImage from './vetor.svg'
 import vetor2 from './vetor2.svg'
 import vetor3 from './vetor3.svg'
 import vetor4 from './vetor4.svg'
+import vetor5 from './vetor5.svg'
 import videoPlayer from './videoPlayer.svg'
 import videoPlayer2 from './videoPlayer2.svg'
 
@@ -60,6 +63,7 @@ export const icons = {
 	vetor2,
 	vetor3,
 	vetor4,
+	vetor5,
 	Lightbulb,
 	elipse,
 	heart,
@@ -71,5 +75,7 @@ export const icons = {
 	peace2,
 	gender,
 	gender2,
-	videoPlayer2
+	videoPlayer2,
+	feedbackIcon,
+	doubleQuotes
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import FeedbackOrganism from '../../components/organisms/FeedbackOrganism'
+import FeedbackVideosOrganism from '../../components/organisms/FeedbackVideosOrganism'
 import HomePageOrganism from '../../components/organisms/HomePageOrganism'
 import KnowMoreOrganismo from '../../components/organisms/KnowMoreOrganismo'
 import OurTracesOrganism from '../../components/organisms/OurTracesOrganism'
@@ -13,6 +15,8 @@ const HomePage: React.FC = () => {
 			<KnowMoreOrganismo />
 			<OurValuesOrganism />
 			<OurTracesOrganism />
+			<FeedbackOrganism />
+			<FeedbackVideosOrganism />
 		</>
 	)
 }
