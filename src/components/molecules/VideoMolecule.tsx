@@ -9,8 +9,8 @@ const VideoMolecule: React.FC = () => {
 	return (
 		<C.VideoContainer>
 			<ReactPlayer
-				width={'1243px'}
-				height={'711px'}
+				width={'98%'}
+				height={'51.938rem'}
 				url={'https://www.youtube.com/watch?v=apRlZCRtLuA'}
 				controls={true}
 				playIcon={<PlayerAtom icon={icons.videoPlayer} />}

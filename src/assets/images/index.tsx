@@ -1,5 +1,8 @@
 import image3 from './image3.png'
 import image4 from './image4.png'
+import imgContent2 from './imgContent2.png'
+import imgContent3 from './imgContetent3.png'
+import podcastImg from './podcastImg.png'
 import profile1 from './profile1.png'
 import profile2 from './profile2.png'
 import profile3 from './profile3.png'
@@ -21,5 +24,8 @@ export const images = {
 	profile3,
 	thumb1,
 	thumb2,
-	thumb3
+	thumb3,
+	imgContent3,
+	imgContent2,
+	podcastImg
 }

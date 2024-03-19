@@ -8,10 +8,10 @@ export const MainPage = styled.div`
 `
 
 export const HomeContainer = styled.div`
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	justify-content: center;
-	width: 100%;
+	width: 116rem;
 `
 
 export const CenterContainer = styled.div`
@@ -41,8 +41,8 @@ export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1275px;
-	height: 742px;
+	width: 92rem;
+	height: 53.938rem;
 	border-radius: 26px;
 	background: rgba(33, 36, 41, 0.2);
 	position: relative;

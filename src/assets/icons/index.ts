@@ -1,5 +1,6 @@
 import doubleQuotes from './ doubleQuotes.svg'
 import Lightbulb from './Lightbulb.svg'
+import arrowLeft from './arrowLeft.svg'
 import arrowRight from './arrowRight.svg'
 import background from './background.svg'
 import boxIcon from './boxIcon.svg'
@@ -8,6 +9,7 @@ import chatBar from './chatBar.svg'
 import checkIcon from './checkIcon.svg'
 import checkmark from './checkmark.svg'
 import elipse from './elipse.svg'
+import emailFooter from './emailFooter.svg'
 import emailIcon from './emailIcon.svg'
 import facebookIcon from './facebookIcon.svg'
 import feedbackIcon from './feedbackIcon.svg'
@@ -23,6 +25,7 @@ import medal from './medal.svg'
 import path from './path.svg'
 import peace from './peace.svg'
 import peace2 from './peace2.svg'
+import phoneFooter from './phoneFooter.svg'
 import phoneIcon from './phoneIcon.svg'
 import playerIcon from './player.svg'
 import smile from './smile.svg'
@@ -77,5 +80,8 @@ export const icons = {
 	gender2,
 	videoPlayer2,
 	feedbackIcon,
-	doubleQuotes
+	doubleQuotes,
+	arrowLeft,
+	phoneFooter,
+	emailFooter
 }

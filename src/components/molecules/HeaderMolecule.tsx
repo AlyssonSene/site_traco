@@ -20,8 +20,6 @@ const HeaderMolecule: React.FC = () => {
 			<C.IconsContainer className='icons'>
 				<ImageAtom url={icons.facebookIcon} alt='logo do facebook' />
 				<ImageAtom url={icons.instagramIcon} alt='logo do instagram' />
-				<ImageAtom url={icons.emailIcon} alt='logo email' />
-				<ImageAtom url={icons.phoneIcon} alt='logo telefone' />
 			</C.IconsContainer>
 		</C.HeaderMenu>
 	)

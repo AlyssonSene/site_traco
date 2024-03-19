@@ -1,5 +1,5 @@
 export interface IImageAtom {
-	url?: string
+	url: string
 	alt: string
 	onClick?: () => void
 }
@@ -79,4 +79,10 @@ export interface IFeedbackCards {
 	url: string
 	name: string
 	post: string
+}
+
+export interface IContentCards {
+	img: string
+	text: string
+	title: string
 }
