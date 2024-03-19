@@ -31,7 +31,7 @@ export const OptionsContainer = styled.div`
 export const IconsContainer = styled.div`
 	display: flex;
 	justify-content: space-around;
-	width: 216px;
+	width: 100px;
 	img {
 		cursor: pointer;
 	}

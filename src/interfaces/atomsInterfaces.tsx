@@ -1,5 +1,5 @@
 export interface IImageAtom {
-	url: string
+	url?: string
 	alt: string
 	onClick?: () => void
 }

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { icons } from '../assets/icons'
+import vetor3 from '../assets/images/vetor3.png'
 
 export const MainContainer = styled.div`
 	width: 100%;
 	height: 892px;
-	background: url(${icons.vetor5}), #550261;
+	background: url(${vetor3}), #550261;
 	background-repeat: round;
 	display: flex;
 	flex-direction: column;

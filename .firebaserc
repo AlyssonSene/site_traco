@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "site-traco"
-  }
+    "default": "site-traco-teste",
+    "e.g staging": "site-traco-teste",
+    "site-traco-teste": "site-traco-teste"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -16,13 +16,13 @@ const FooterMolecule: React.FC = () => {
 					<C.FooterIcon>
 						<ImageAtom url={icons.phoneFooter} alt={'icone de telefone'} />
 					</C.FooterIcon>
-					<TextAtom type={'span'} text={'(35)9 9999-9999'} />
+					<TextAtom type={'span'} text={'(31) 9 9837-0123'} />
 				</div>
 				<div>
 					<C.FooterIcon>
 						<ImageAtom url={icons.emailFooter} alt={'Icone de email'} />
 					</C.FooterIcon>
-					<TextAtom type={'span'} text={'email@email.com'} />
+					<TextAtom type={'span'} text={'contato@tracoprojetos.com'} />
 				</div>
 			</C.FooterIcons>
 		</C.Footer>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import background from '../assets/icons/background.svg'
+import background from '../assets/images/background.png'
 
 export const MainPage = styled.div`
 	display: flex;

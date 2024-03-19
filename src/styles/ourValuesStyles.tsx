@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { icons } from '../assets/icons'
+import vetor2 from '../assets/images/vetor2.png'
 
 export const MainContainer = styled.div`
 	display: flex;
@@ -9,8 +9,9 @@ export const MainContainer = styled.div`
 	height: 1246px;
 	margin: 0 50px;
 	border-radius: 24px;
-	background: url(${icons.vetor2}) #f8e8f2;
+	background-image: url(${vetor2});
 	background-repeat: round;
+	background-color: #f8e8f2;
 `
 
 export const Header = styled.div`
