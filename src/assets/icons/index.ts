@@ -11,7 +11,6 @@ import checkmark from './checkmark.svg'
 import elipse from './elipse.svg'
 import emailFooter from './emailFooter.svg'
 import emailIcon from './emailIcon.svg'
-import facebookIcon from './facebookIcon.svg'
 import feedbackIcon from './feedbackIcon.svg'
 import gender from './gender.svg'
 import gender2 from './gender2.svg'
@@ -40,10 +39,11 @@ import vetor4 from './vetor4.svg'
 import vetor5 from './vetor5.svg'
 import videoPlayer from './videoPlayer.svg'
 import videoPlayer2 from './videoPlayer2.svg'
+import youtubeIcon from './youtubeIcon.svg'
 
 export const icons = {
 	emailIcon,
-	facebookIcon,
+	youtubeIcon,
 	instagramIcon,
 	phoneIcon,
 	tracoIcon,

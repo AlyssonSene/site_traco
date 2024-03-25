@@ -66,7 +66,7 @@ const OurTracesOrganism: React.FC = () => {
 	}
 
 	return (
-		<C.MainContainer>
+		<C.MainContainer className='section' id='traces'>
 			<C.Header>
 				<C.HeaderTitle>
 					<ImageAtom url={icons.heart} alt={''} />

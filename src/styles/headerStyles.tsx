@@ -6,6 +6,10 @@ export const HeaderMenu = styled.div`
 	align-items: center;
 	width: 100%;
 	height: 108px;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 100;
 `
 
 export const LogoContainer = styled.div`
@@ -17,14 +21,26 @@ export const OptionsContainer = styled.div`
 	display: flex;
 	width: 540px;
 	justify-content: space-around;
-	span {
-		cursor: pointer;
-		color: #717a88;
-		font-family: 'Montserrat Alternates';
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 27px;
+	a {
+		span {
+			cursor: pointer;
+			color: #717a88;
+			font-family: 'Montserrat Alternates';
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 27px;
+		}
+	}
+	a.active {
+		span {
+			color: var(--Secondary-Purple, #550261);
+			font-family: 'Montserrat Alternates';
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 150%; /* 27px */
+		}
 	}
 `
 

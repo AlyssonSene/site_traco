@@ -6,7 +6,7 @@ import VideoMolecule from '../molecules/VideoMolecule'
 
 const HomePageOrganism: React.FC = () => {
 	return (
-		<MainPage>
+		<MainPage className='section' id='start'>
 			<HeaderMolecule />
 			<HomeContainerMolecule />
 			<VideoMolecule />

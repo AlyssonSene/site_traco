@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import vetor2 from '../assets/images/vetor2.png'
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: auto;
 	height: 1246px;
-	margin: 0 50px;
+	margin: 0 50px 125px;
 	border-radius: 24px;
 	background-image: url(${vetor2});
 	background-repeat: round;

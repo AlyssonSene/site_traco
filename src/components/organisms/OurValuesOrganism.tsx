@@ -9,7 +9,7 @@ import TextAtom from '../atoms/TextAtom'
 
 const OurValuesOrganism: React.FC = () => {
 	return (
-		<C.MainContainer>
+		<C.MainContainer className='section' id='values'>
 			<C.Header>
 				<C.HeaderTitle>
 					<ImageAtom url={icons.Lightbulb} alt={''} />

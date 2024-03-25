@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { IProducts } from '../interfaces/atomsInterfaces'
 
-export const ProductsContainer = styled.div`
+export const ProductsContainer = styled.section`
 	display: flex;
 	align-items: center;
 	flex-direction: column;

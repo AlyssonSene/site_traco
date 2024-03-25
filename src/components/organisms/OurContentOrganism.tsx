@@ -7,7 +7,7 @@ import OurContentCardsMolecule from '../molecules/OurContentCardsMolecule'
 
 const OurContentOrganism: React.FC = () => {
 	return (
-		<C.MainContainer>
+		<C.MainContainer className='section' id='news'>
 			<C.HeaderContainer>
 				<C.Title>
 					<TextAtom type={'h1'} text={'Acesse nossos conteúdos'} />

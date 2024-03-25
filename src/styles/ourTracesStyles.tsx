@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { ITraceCard } from '../interfaces/atomsInterfaces'
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.section`
 	display: flex;
 	flex-direction: column;
 	margin-top: 115px;

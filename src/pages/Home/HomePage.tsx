@@ -9,6 +9,26 @@ import OurValuesOrganism from '../../components/organisms/OurValuesOrganism'
 import ProductsPageOrganism from '../../components/organisms/ProductsPageOrganism'
 
 const HomePage: React.FC = () => {
+	const links = document.querySelectorAll('.options-link')
+	const sections = document.querySelectorAll('section')
+
+	window.addEventListener('scroll', () => {
+		sections.forEach(section => {
+			let top = window.scrollY
+			let offSet = section.offsetTop - 100
+			let heightSection = section.offsetHeight
+			let idSection = section.getAttribute('id')
+
+			if (top >= offSet && top <= offSet + heightSection) {
+				links.forEach(link => {
+					link.classList.remove('active')
+					document
+						.querySelector(`a[href*=${idSection}]`)
+						?.classList.add('active')
+				})
+			}
+		})
+	})
 	return (
 		<>
 			<HomePageOrganism />

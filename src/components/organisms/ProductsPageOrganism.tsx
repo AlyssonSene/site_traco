@@ -8,7 +8,7 @@ import ProductsMolecule from '../molecules/ProductsMolecule'
 
 const ProductsPageOrganism: React.FC = () => {
 	return (
-		<C.ProductsContainer>
+		<C.ProductsContainer className='section' id='products'>
 			<C.TitleContainer>
 				<TextAtom text={'Conheça o'} type='span' />
 				<TextAtom text={'Escola Melhor Para Todos'} type='h1' />

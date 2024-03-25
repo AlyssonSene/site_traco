@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.section`
 	width: 100%;
 	height: 1074px;
 	flex-shrink: 0;

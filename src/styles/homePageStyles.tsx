@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import background from '../assets/images/background.png'
 
-export const MainPage = styled.div`
+export const MainPage = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,7 +25,7 @@ export const CenterContainer = styled.div`
 		linear-gradient(135deg, #ff6307 -10.57%, #fa39b9 106.84%);
 	background-repeat: round;
 	border-radius: 24px;
-
+	margin-top: 120px;
 	h1 {
 		font-family: 'Montserrat Alternates';
 		font-size: 64px;
@@ -64,7 +64,6 @@ export const StudentsDiv = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 8px;
 	background: #f3c0e2;
 	width: 443px;
 	height: 32px;
