@@ -1,7 +1,6 @@
 export interface values {
-	nome: string
-	telefone: string
+	product: string
+	phone: string
+	name: string
 	email: string
-	assunto: string
-	mensagem: string
 }

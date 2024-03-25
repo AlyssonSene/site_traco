@@ -15,6 +15,7 @@ const ProductsPageOrganism: React.FC = () => {
 			</C.TitleContainer>
 			<C.CardsContainer>
 				<ProductsMolecule
+					product='Pacote 1'
 					paymentType={'R$ 700,00/mês parcelados em até 6x'}
 					checkmark={icons.checkIcon}
 					$typeBorder={'package1'}
@@ -26,6 +27,7 @@ const ProductsPageOrganism: React.FC = () => {
 					data={data.products[0].package}
 				/>
 				<ProductsMolecule
+					product='Pacote 2'
 					paymentType={'R$ 620,00/mês parcelados em até 10x'}
 					checkmark={icons.checkmark}
 					$typeBorder={'package2'}

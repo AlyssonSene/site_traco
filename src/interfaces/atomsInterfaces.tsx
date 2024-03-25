@@ -37,6 +37,7 @@ export interface ICard {
 	data: objectData
 	checkmark: string
 	paymentType: string
+	product: string
 }
 
 export interface IHeaderOption {
@@ -99,4 +100,5 @@ export interface IInputAtom {
 
 export interface IFormMolecule {
 	handleClose: () => void
+	product: string
 }

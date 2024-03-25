@@ -17,7 +17,8 @@ const ProductsMolecule: React.FC<ICard> = ({
 	$typeBorder,
 	data,
 	checkmark,
-	paymentType
+	paymentType,
+	product
 }) => {
 	const [show, setShow] = useState(false)
 	const handleClose = () => {
@@ -128,7 +129,7 @@ const ProductsMolecule: React.FC<ICard> = ({
 					<CloseButton onClick={handleClose}>
 						<span>x</span>
 					</CloseButton>
-					<FormMolecule handleClose={handleClose} />
+					<FormMolecule handleClose={handleClose} product={product} />
 				</Modal.Body>
 			</Modal>
 		</C.Products>

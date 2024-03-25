@@ -2,25 +2,32 @@ import React, { useState } from 'react'
 import { icons } from '../../assets/icons'
 import { IFormMolecule } from '../../interfaces/atomsInterfaces'
 import * as C from '../../styles/formStyles'
+import sendMail from '../../utils/mailer'
 import ButtonAtom from '../atoms/ButtonAtom'
 import ImageAtom from '../atoms/ImageAtom'
 import InputAtom from '../atoms/InputAtom'
 import TextAtom from '../atoms/TextAtom'
 
-const FormMolecule: React.FC<IFormMolecule> = ({ handleClose }) => {
+const FormMolecule: React.FC<IFormMolecule> = ({ handleClose, product }) => {
 	const [email, setEmail] = useState<string>('')
 	const [phone, setPhone] = useState<string>('')
+	const [name, setName] = useState<string>('')
 
 	const handleEmail = (value: string) => {
 		setEmail(value)
+	}
+
+	const handleName = (value: string) => {
+		setName(value)
 	}
 
 	const handlePhone = (value: string) => {
 		setPhone(value)
 	}
 
-	const sendEmail = () => {
-		console.log([email, phone])
+	const sendEmail = async () => {
+		await sendMail({ phone, name, email, product })
+		handleClose()
 	}
 
 	return (
@@ -44,6 +51,10 @@ const FormMolecule: React.FC<IFormMolecule> = ({ handleClose }) => {
 			</C.FormHeader>
 			<C.Line />
 			<C.Form>
+				<div id='name'>
+					<TextAtom type={'span'} text={'Nome'} />
+					<InputAtom type={'text'} onChange={handleName} value={name} />
+				</div>
 				<div id='email'>
 					<TextAtom type={'span'} text={'Email'} />
 					<InputAtom type={'email'} onChange={handleEmail} value={email} />

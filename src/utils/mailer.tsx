@@ -1,26 +1,19 @@
 import emailJS from '@emailjs/browser'
 import { values } from '../interfaces/mailerInterface'
 
-const sendMail = async ({
-	nome,
-	email,
-	assunto,
-	mensagem,
-	telefone
-}: values) => {
+const sendMail = async ({ name, phone, product, email }: values) => {
 	const templateParams = {
-		nome,
-		email,
-		assunto,
-		mensagem,
-		telefone
+		name,
+		product,
+		phone,
+		email
 	}
 
 	const result = await emailJS.send(
-		import.meta.env.VITE_EMAIL_SERVICE_ID,
-		import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+		'service_xsudotv',
+		'template_i6wqj4c',
 		templateParams,
-		import.meta.env.VITE_EMAIL_PUBLIC_KEY
+		'nnwqs0ZnuwBy5W8fb'
 	)
 
 	return result
