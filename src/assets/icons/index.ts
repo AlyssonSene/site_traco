@@ -8,6 +8,7 @@ import brush from './brush.svg'
 import chatBar from './chatBar.svg'
 import checkIcon from './checkIcon.svg'
 import checkmark from './checkmark.svg'
+import circle from './circle.svg'
 import elipse from './elipse.svg'
 import emailFooter from './emailFooter.svg'
 import emailIcon from './emailIcon.svg'
@@ -83,5 +84,6 @@ export const icons = {
 	doubleQuotes,
 	arrowLeft,
 	phoneFooter,
-	emailFooter
+	emailFooter,
+	circle
 }

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal } from 'react-bootstrap'
 import { ICard } from '../../interfaces/atomsInterfaces'
+import { CloseButton } from '../../styles/ourTracesStyles'
 import * as C from '../../styles/productsStyles'
 import ButtonAtom from '../atoms/ButtonAtom'
 import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
+import FormMolecule from './FormMolecule'
 
 const ProductsMolecule: React.FC<ICard> = ({
 	title,
@@ -16,6 +19,10 @@ const ProductsMolecule: React.FC<ICard> = ({
 	checkmark,
 	paymentType
 }) => {
+	const [show, setShow] = useState(false)
+	const handleClose = () => {
+		setShow(false)
+	}
 	return (
 		<C.Products $typeBorder={$typeBorder}>
 			<C.ProductTitle>
@@ -104,9 +111,29 @@ const ProductsMolecule: React.FC<ICard> = ({
 			<C.Description>
 				<TextAtom text={description} type={'span'} />
 			</C.Description>
-			<C.subscribeButton>
-				<ButtonAtom text={'Inscrever-se'} />
-			</C.subscribeButton>
+			<C.Buttons>
+				<C.subscribeButton>
+					<ButtonAtom text={'Adiquira já'} />
+				</C.subscribeButton>
+				<C.subscribeButton>
+					<ButtonAtom text={'Saiba mais'} onClick={() => setShow(true)} />
+				</C.subscribeButton>
+			</C.Buttons>
+			<Modal
+				size='lg'
+				dialogClassName='modal-30w'
+				show={show}
+				onHide={handleClose}
+				backdrop='static'
+				keyboard={false}
+			>
+				<Modal.Body>
+					<CloseButton onClick={handleClose}>
+						<span>x</span>
+					</CloseButton>
+					<FormMolecule />
+				</Modal.Body>
+			</Modal>
 		</C.Products>
 	)
 }

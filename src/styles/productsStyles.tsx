@@ -195,16 +195,18 @@ export const Description = styled.div`
 		line-height: 21px;
 	}
 `
-
+export const Buttons = styled.div`
+	display: flex;
+`
 export const subscribeButton = styled.div`
-	width: 80%;
-	height: 75px;
+	width: 50%;
+	height: 45px;
 	border-radius: 16px;
 	background: #550261;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	margin: 40px 10%;
+	margin: 30px 10px;
 	button {
 		background-color: transparent;
 		border: none;

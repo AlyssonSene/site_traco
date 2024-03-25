@@ -14,11 +14,18 @@ const ButtonsMolecule: React.FC = () => {
 		<ButtonsContainer>
 			<AboutMoreButton>
 				<ImageAtom alt='arrow right' url={icons.arrowRight} />
-				<ButtonAtom text='Conheça nossos produtos' />
+				<a href='#products'>
+					<ButtonAtom text='Conheça nossos produtos' />
+				</a>
 			</AboutMoreButton>
 			<PodcastButton>
 				<ImageAtom alt='arrow right' url={icons.playerIcon} />
-				<ButtonAtom text='Conheça nosso podcast' />
+				<a
+					href='https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W'
+					target='_blank'
+				>
+					<ButtonAtom text='Conheça nosso podcast' />
+				</a>
 			</PodcastButton>
 			<SoonMolecule />
 		</ButtonsContainer>

@@ -26,7 +26,6 @@ const HomePage: React.FC = () => {
 						document
 							.querySelector(`a[href*=${idSection}]`)
 							?.classList.add('active')
-						console.log(offSet)
 					})
 				}
 			})

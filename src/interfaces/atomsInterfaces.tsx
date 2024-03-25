@@ -85,4 +85,9 @@ export interface IContentCards {
 	img: string
 	text: string
 	title: string
+	link?: string
+}
+
+export interface IInputAtom {
+	type: string
 }

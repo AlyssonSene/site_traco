@@ -99,8 +99,8 @@ export const CloseButton = styled.div`
 	cursor: pointer;
 	right: 0;
 	margin: 4px 22px;
-	width: 32px;
-	height: 32px;
+	width: 33px;
+	height: 33px;
 	background: #fff;
 	border-radius: 50%;
 	display: flex;
@@ -108,7 +108,7 @@ export const CloseButton = styled.div`
 	justify-content: center;
 	filter: drop-shadow(0px 5px 10px rgba(47, 99, 163, 0.15));
 	span {
-		font-size: 19px;
+		font-size: 20px;
 	}
 `
 

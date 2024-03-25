@@ -8,7 +8,8 @@ import TextAtom from '../atoms/TextAtom'
 const OurContentCardsMolecule: React.FC<IContentCards> = ({
 	img,
 	title,
-	text
+	text,
+	link
 }) => {
 	return (
 		<C.Cards>
@@ -24,7 +25,10 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 					<TextAtom type={'h5'} text={text} />
 				</C.TextCard>
 				<C.AboutMore>
-					<TextAtom type={'span'} text={'Saiba mais'} />
+					<a href={link} target='_blank'>
+						<TextAtom type={'span'} text={'Saiba mais'} />
+					</a>
+
 					<ImageAtom alt={'icone de seta'} url={icons.arrowLeft} />
 				</C.AboutMore>
 			</C.TextsContainer>

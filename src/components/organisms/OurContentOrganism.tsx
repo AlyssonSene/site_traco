@@ -15,6 +15,9 @@ const OurContentOrganism: React.FC = () => {
 			</C.HeaderContainer>
 			<C.CardsContainer>
 				<OurContentCardsMolecule
+					link={
+						'https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W'
+					}
 					img={images.podcastImg}
 					text={
 						'Não perca nosso 1 episódio com o tema Diversidade e inclusão. Neste episódio nossos consultores Bárbara e...'
