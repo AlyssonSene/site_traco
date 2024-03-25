@@ -112,9 +112,9 @@ const ProductsMolecule: React.FC<ICard> = ({
 				<TextAtom text={description} type={'span'} />
 			</C.Description>
 			<C.Buttons>
-				<C.subscribeButton>
+				{/* <C.subscribeButton>
 					<ButtonAtom text={'Adiquira já'} />
-				</C.subscribeButton>
+				</C.subscribeButton> */}
 				<C.subscribeButton>
 					<ButtonAtom text={'Saiba mais'} onClick={() => setShow(true)} />
 				</C.subscribeButton>

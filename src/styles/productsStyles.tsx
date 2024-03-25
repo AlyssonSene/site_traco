@@ -197,10 +197,11 @@ export const Description = styled.div`
 `
 export const Buttons = styled.div`
 	display: flex;
+	justify-content: center;
 `
 export const subscribeButton = styled.div`
 	width: 50%;
-	height: 45px;
+	height: 55px;
 	border-radius: 16px;
 	background: #550261;
 	cursor: pointer;

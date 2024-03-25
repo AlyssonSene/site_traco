@@ -1,6 +1,7 @@
 import React from 'react'
 import { icons } from '../../assets/icons'
 import * as C from '../../styles/formStyles'
+import ButtonAtom from '../atoms/ButtonAtom'
 import ImageAtom from '../atoms/ImageAtom'
 import InputAtom from '../atoms/InputAtom'
 import TextAtom from '../atoms/TextAtom'
@@ -36,6 +37,15 @@ const FormMolecule: React.FC = () => {
 					<InputAtom type={'tel'} />
 				</div>
 			</C.Form>
+			<C.Line />
+			<C.Buttons>
+				<div className='cancel'>
+					<ButtonAtom text={'Cancelar'} />
+				</div>
+				<div className='sending'>
+					<ButtonAtom text={'enviar'} />
+				</div>
+			</C.Buttons>
 		</C.FormContainer>
 	)
 }

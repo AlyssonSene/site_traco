@@ -45,6 +45,7 @@ export const Form = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	height: 70%;
 	padding: 45px;
 	div {
 		display: flex;
@@ -69,5 +70,47 @@ export const Form = styled.div`
 		font-weight: 400;
 		line-height: 21px;
 		margin-bottom: 5px;
+	}
+`
+
+export const Buttons = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 50px;
+	padding-right: 25px;
+	.cancel {
+		button {
+			margin-right: 25px;
+			width: 195px;
+			height: 65px;
+			border-radius: 16px;
+			border: 1px solid #d0d9e5;
+			background: #fff;
+			color: #1f2325;
+			text-align: center;
+			font-family: 'Montserrat Alternates';
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 27px;
+		}
+	}
+
+	.sending {
+		button {
+			width: 195px;
+			height: 65px;
+			border-radius: 16px;
+			background: #550261;
+			color: #fff;
+			text-align: center;
+			font-family: 'Montserrat Alternates';
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 27px;
+		}
 	}
 `
