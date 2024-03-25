@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
 	window.addEventListener('scroll', () => {
 		sections.forEach(section => {
 			let top = window.scrollY
-			let offSet = section.offsetTop - 100
+			let offSet = section.offsetTop - 10
 			let heightSection = section.offsetHeight
 			let idSection = section.getAttribute('id')
 

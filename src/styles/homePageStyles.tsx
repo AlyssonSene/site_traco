@@ -8,10 +8,10 @@ export const MainPage = styled.section`
 `
 
 export const HomeContainer = styled.div`
-	height: 90vh;
+	height: 95vh;
 	display: flex;
 	justify-content: center;
-	width: 116rem;
+	width: 99%;
 `
 
 export const CenterContainer = styled.div`
@@ -41,8 +41,8 @@ export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 92rem;
-	height: 53.938rem;
+	width: 85%;
+	height: 54rem;
 	border-radius: 26px;
 	background: rgba(33, 36, 41, 0.2);
 	position: relative;
@@ -177,5 +177,5 @@ export const PodcastButton = styled.div`
 export const SoonContainer = styled.div`
 	position: absolute;
 	top: 35%;
-	left: calc(85% - 3%);
+	left: calc(80% - 3%);
 `
