@@ -1,3 +1,6 @@
+import ellipse1 from './Ellipse1.png'
+import ellipse2 from './Ellipse2.png'
+import ellipse3 from './Ellipse3.png'
 import image3 from './image3.png'
 import image4 from './image4.png'
 import imgContent2 from './imgContent2.png'
@@ -27,5 +30,8 @@ export const images = {
 	thumb3,
 	imgContent3,
 	imgContent2,
-	podcastImg
+	podcastImg,
+	ellipse1,
+	ellipse2,
+	ellipse3
 }

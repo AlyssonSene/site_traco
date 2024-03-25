@@ -2,6 +2,7 @@ export interface IImageAtom {
 	url?: string
 	alt: string
 	onClick?: () => void
+	className?: string
 }
 
 export interface ITextAtom {
@@ -90,4 +91,12 @@ export interface IContentCards {
 
 export interface IInputAtom {
 	type: string
+	onChange: (value: string) => void
+	value: string
+	typeMask?: string
+	placeholder?: string
+}
+
+export interface IFormMolecule {
+	handleClose: () => void
 }

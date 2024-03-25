@@ -63,10 +63,10 @@ export const VideoContainer = styled.div`
 export const StudentsDiv = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	background: #f3c0e2;
-	width: 443px;
 	height: 32px;
+	width: 479px;
+	flex-shrink: 0;
 	margin-top: 70px;
 	border-radius: 8px;
 	border: 1px;
@@ -77,6 +77,32 @@ export const StudentsDiv = styled.div`
 		font-style: normal;
 		font-weight: 500;
 		line-height: 24px;
+	}
+`
+
+export const Images = styled.div`
+	display: flex;
+	margin-left: 5px;
+	img {
+		width: 24px;
+		height: 24px;
+		border-radius: 24px;
+		border: 1px solid #ffcbed;
+	}
+	.image1 {
+		position: relative;
+		left: calc(5% - 5px);
+		z-index: 11;
+	}
+	.image2 {
+		position: relative;
+		left: calc(-7% - 5px);
+		z-index: 10;
+	}
+	.image3 {
+		position: relative;
+		left: calc(-19% - 5px);
+		z-index: 9;
 	}
 `
 
@@ -96,7 +122,7 @@ export const SloganContainer = styled.div`
 export const Traco = styled.span`
 	position: absolute;
 	top: 35%;
-	left: calc(70% - 30px);
+	left: calc(75% - 10%);
 	width: 291.341px;
 	transform: rotate(-0.352deg);
 	stroke-width: 8px;

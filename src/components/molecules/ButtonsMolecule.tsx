@@ -7,7 +7,6 @@ import {
 } from '../../styles/homePageStyles'
 import ButtonAtom from '../atoms/ButtonAtom'
 import ImageAtom from '../atoms/ImageAtom'
-import SoonMolecule from './SoonMolecule'
 
 const ButtonsMolecule: React.FC = () => {
 	return (
@@ -27,7 +26,6 @@ const ButtonsMolecule: React.FC = () => {
 					<ButtonAtom text='Conheça nosso podcast' />
 				</a>
 			</PodcastButton>
-			<SoonMolecule />
 		</ButtonsContainer>
 	)
 }

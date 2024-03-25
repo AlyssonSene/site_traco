@@ -112,9 +112,6 @@ const ProductsMolecule: React.FC<ICard> = ({
 				<TextAtom text={description} type={'span'} />
 			</C.Description>
 			<C.Buttons>
-				{/* <C.subscribeButton>
-					<ButtonAtom text={'Adiquira já'} />
-				</C.subscribeButton> */}
 				<C.subscribeButton>
 					<ButtonAtom text={'Saiba mais'} onClick={() => setShow(true)} />
 				</C.subscribeButton>
@@ -131,7 +128,7 @@ const ProductsMolecule: React.FC<ICard> = ({
 					<CloseButton onClick={handleClose}>
 						<span>x</span>
 					</CloseButton>
-					<FormMolecule />
+					<FormMolecule handleClose={handleClose} />
 				</Modal.Body>
 			</Modal>
 		</C.Products>
