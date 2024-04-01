@@ -8,7 +8,7 @@ const SubtitleMolecule: React.FC = () => {
 			<TextAtom
 				type='h4'
 				text={
-					'A Traço é uma empresa de projetos e consultoria, especializada em promover ações de formação, mobilização, relacionamento e comunicação. Venha conhecer o nosso trabalho!'
+					'A Traço é uma empresa que implementa soluções educacionais. Somos especializados em promover ações de formação, mobilização, relacionamento, articulação e engajamento.'
 				}
 			/>
 		</SubtitleContainer>

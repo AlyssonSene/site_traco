@@ -9,7 +9,7 @@ const DescriptionMolecule: React.FC = () => {
 				<TextAtom
 					type={'span'}
 					text={
-						'A Traço propõe uma abordagem inovadora para transformar o ambiente escolar, focando na implementação de práticas pedagógicas e de gestão que promovam relações mais saudáveis, a redução de conflitos e maior participação dos estudantes nas atividades escolares. Impactando positivamente na aprendizagem.'
+						'A Traço é uma empresa que implementa soluções educacionais. Somos especializados em promover ações de formação, mobilização, relacionamento, articulação e engajamento.'
 					}
 				/>
 			</C.Description>
