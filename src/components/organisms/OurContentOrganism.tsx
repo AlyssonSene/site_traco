@@ -5,8 +5,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { icons } from '../../assets/icons'
 import { images } from '../../assets/images'
 import * as C from '../../styles/ourContentStyles'
+import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
 import FooterMolecule from '../molecules/FooterMolecule'
 import OurContentCardsMolecule from '../molecules/OurContentCardsMolecule'
@@ -45,13 +47,17 @@ const OurContentOrganism: React.FC = () => {
 				<C.Title>
 					<TextAtom type={'h1'} text={'Acesse nossos conteúdos'} />
 				</C.Title>
+				<C.Buttons>
+					<ImageAtom className='prevNews' alt={'prev'} url={icons.prevNews} />
+					<ImageAtom className='nextNews' alt={'next'} url={icons.nextNews} />
+				</C.Buttons>
 			</C.HeaderContainer>
 			<C.CardsContainer>
 				<Swiper
 					style={{ width: '100vw', display: 'flex' }}
 					modules={[Navigation, Pagination, Scrollbar, A11y]}
 					slidesPerView={3}
-					navigation
+					navigation={{ nextEl: '.nextNews', prevEl: '.prevNews' }}
 				>
 					{infos.map((info, index) => (
 						<SwiperSlide key={index}>

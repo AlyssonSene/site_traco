@@ -22,12 +22,16 @@ import handshake2 from './handshake2.svg'
 import heart from './heart.svg'
 import instagramIcon from './instagramIcon.svg'
 import medal from './medal.svg'
+import next from './next.svg'
+import nextNews from './nextNews.svg'
 import path from './path.svg'
 import peace from './peace.svg'
 import peace2 from './peace2.svg'
 import phoneFooter from './phoneFooter.svg'
 import phoneIcon from './phoneIcon.svg'
 import playerIcon from './player.svg'
+import prev from './prev.svg'
+import prevNews from './prevNews.svg'
 import smile from './smile.svg'
 import smile2 from './smile2.svg'
 import soonIcon from './soonIcon.svg'
@@ -85,5 +89,9 @@ export const icons = {
 	arrowLeft,
 	phoneFooter,
 	emailFooter,
-	circle
+	circle,
+	next,
+	prev,
+	prevNews,
+	nextNews
 }

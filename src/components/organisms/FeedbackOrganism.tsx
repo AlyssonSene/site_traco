@@ -50,6 +50,10 @@ const FeedbackOrganism: React.FC = () => {
 					<C.Title>
 						<TextAtom type={'h1'} text={'Nos importamos com seus resultados'} />
 					</C.Title>
+					<C.Buttons>
+						<ImageAtom className='prev' alt={'prev'} url={images.prev} />
+						<ImageAtom className='next' alt={'next'} url={images.next} />
+					</C.Buttons>
 				</C.Section>
 			</div>
 
@@ -58,7 +62,7 @@ const FeedbackOrganism: React.FC = () => {
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={5}
 				slidesPerView={3}
-				navigation
+				navigation={{ nextEl: '.next', prevEl: '.prev' }}
 			>
 				{videos.map((video, index) => (
 					<SwiperSlide key={index}>

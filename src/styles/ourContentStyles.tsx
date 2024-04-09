@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const MainContainer = styled.section`
 	width: 100%;
 	height: 1074px;
-	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,9 +16,17 @@ export const HeaderContainer = styled.div`
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding: 125px;
+	.prevNews,
+	.nextNews {
+		width: 45px;
+	}
+	.prevNews::after {
+		fill: red;
+	}
 `
 export const Title = styled.div`
-	margin: 125px 208px 90px;
 	h1 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';
@@ -30,6 +37,7 @@ export const Title = styled.div`
 		letter-spacing: 1.92px;
 	}
 `
+export const Buttons = styled.div``
 
 export const CardsContainer = styled.div`
 	display: flex;

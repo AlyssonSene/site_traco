@@ -5,7 +5,9 @@ import image3 from './image3.png'
 import image4 from './image4.png'
 import imgContent2 from './imgContent2.png'
 import imgContent3 from './imgContetent3.png'
+import next from './next.png'
 import podcastImg from './podcastImg.png'
+import prev from './prev.png'
 import profile1 from './profile1.png'
 import profile2 from './profile2.png'
 import profile3 from './profile3.png'
@@ -35,5 +37,7 @@ export const images = {
 	podcastImg,
 	ellipse1,
 	ellipse2,
-	ellipse3
+	ellipse3,
+	next,
+	prev
 }

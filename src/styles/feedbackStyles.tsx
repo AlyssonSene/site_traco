@@ -15,7 +15,6 @@ export const MainContainer = styled.div`
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		padding-left: 150px;
 	}
 	.swiper {
 		padding: 0 50px;
@@ -38,6 +37,7 @@ export const HeaderContainer = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
+	padding-left: 125px;
 `
 
 export const Text = styled.div`
@@ -62,9 +62,11 @@ export const Text = styled.div`
 `
 
 export const Section = styled.div`
-	display: flex;
 	width: 100%;
-	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 125px;
 	h1 {
 		color: #fff;
 		font-family: 'Montserrat Alternates';
@@ -72,11 +74,21 @@ export const Section = styled.div`
 		font-style: normal;
 		font-weight: 500;
 		line-height: 72px;
+		margin-right: 400px;
+	}
+	.swiper-button-disabled {
+		stop-color: red;
+	}
+	.prev,
+	.next {
+		width: 45px;
 	}
 `
 export const Title = styled.div`
 	width: auto;
 `
+
+export const Buttons = styled.div``
 
 export const CardsContainer = styled.div`
 	width: 1504px;
