@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
 		padding-left: 150px;
 	}
 	.swiper {
-		padding: 32px;
+		padding: 0 50px;
 	}
 	.swiper-slide {
 		display: flex;
@@ -26,9 +26,11 @@ export const MainContainer = styled.div`
 	}
 	.swiper-button-prev {
 		color: white;
+		margin: 0 30px;
 	}
 	.swiper-button-next {
 		color: white;
+		margin: 0 30px;
 	}
 `
 

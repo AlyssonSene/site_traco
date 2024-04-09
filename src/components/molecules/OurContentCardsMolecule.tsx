@@ -14,7 +14,7 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 	return (
 		<C.Cards>
 			<div>
-				<ImageAtom alt={'imagem'} url={img} />
+				<ImageAtom alt={'imagem'} url={img} className={'image'} />
 			</div>
 			<C.TextsContainer>
 				<C.TitleCard>

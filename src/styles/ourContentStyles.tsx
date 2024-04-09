@@ -36,18 +36,35 @@ export const CardsContainer = styled.div`
 	justify-content: space-evenly;
 	height: 100%;
 	width: 100%;
+	.swiper {
+		padding: 0 50px;
+	}
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+	}
+	.swiper-button-prev {
+		color: #550261;
+		margin: 0 30px;
+	}
+	.swiper-button-next {
+		color: #550261;
+		margin: 0 30px;
+	}
 `
 
 export const Cards = styled.div`
-	display: flex;
 	flex-direction: column;
-	width: 480px;
+	width: 450px;
 	height: 560px;
 	border-radius: 24px;
 	border: 1px solid #d0d9e5;
 	background: #fff;
 	display: flex;
 	align-items: center;
+	.image {
+		width: 450px;
+	}
 `
 export const TextsContainer = styled.div`
 	display: flex;
