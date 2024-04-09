@@ -19,7 +19,7 @@ export const HeaderContainer = styled.div`
 	align-items: center;
 `
 export const Title = styled.div`
-	margin: 0 208px 90px;
+	margin: 125px 208px 90px;
 	h1 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';

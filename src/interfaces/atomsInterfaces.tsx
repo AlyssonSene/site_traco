@@ -102,3 +102,8 @@ export interface IFormMolecule {
 	handleClose: () => void
 	product: string
 }
+
+export interface ISwiperOrganism {
+	url: string
+	thumb: string
+}

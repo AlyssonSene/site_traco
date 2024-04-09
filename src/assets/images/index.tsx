@@ -13,6 +13,7 @@ import thumb from './thumb.png'
 import thumb1 from './thumb1.png'
 import thumb2 from './thumb2.png'
 import thumb3 from './thumb3.png'
+import thumb4 from './thumb4.png'
 import thumb_citizenship from './thumb_citizenship.png'
 import thumb_peace from './thumb_peace.png'
 
@@ -28,6 +29,7 @@ export const images = {
 	thumb1,
 	thumb2,
 	thumb3,
+	thumb4,
 	imgContent3,
 	imgContent2,
 	podcastImg,

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import FeedbackOrganism from '../../components/organisms/FeedbackOrganism'
-import FeedbackVideosOrganism from '../../components/organisms/FeedbackVideosOrganism'
 import HomePageOrganism from '../../components/organisms/HomePageOrganism'
 import KnowMoreOrganismo from '../../components/organisms/KnowMoreOrganismo'
 import OurContentOrganism from '../../components/organisms/OurContentOrganism'
@@ -39,7 +38,6 @@ const HomePage: React.FC = () => {
 			<OurValuesOrganism />
 			<OurTracesOrganism />
 			<FeedbackOrganism />
-			<FeedbackVideosOrganism />
 			<OurContentOrganism />
 		</>
 	)

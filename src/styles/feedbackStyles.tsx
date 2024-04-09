@@ -14,6 +14,21 @@ export const MainContainer = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
+		padding-left: 150px;
+	}
+	.swiper {
+		padding: 32px;
+	}
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+	}
+	.swiper-button-prev {
+		color: white;
+	}
+	.swiper-button-next {
+		color: white;
 	}
 `
 
@@ -121,7 +136,6 @@ export const VideosContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	height: 600px;
 	width: 100%;
 `
 
