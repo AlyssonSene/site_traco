@@ -140,10 +140,10 @@ export const VideosContainer = styled.div`
 `
 
 export const VideoCard = styled.div`
-	width: 480px;
-	height: 360px;
+	width: 481px;
+	height: 365px;
 	border-radius: 26px;
-	background: rgba(58, 66, 80, 0.2);
+	background: rgba(219, 226, 238, 0.2);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
