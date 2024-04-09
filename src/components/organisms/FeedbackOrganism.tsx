@@ -36,6 +36,7 @@ const FeedbackOrganism: React.FC = () => {
 	const [video, setVideo] = useState('')
 	const [show, setShow] = useState(false)
 	const handleClose = () => setShow(false)
+	const [isEnd, setIsEnd] = useState(false)
 	return (
 		<C.MainContainer>
 			<div>
@@ -51,13 +52,23 @@ const FeedbackOrganism: React.FC = () => {
 						<TextAtom type={'h1'} text={'Nos importamos com seus resultados'} />
 					</C.Title>
 					<C.Buttons>
-						<ImageAtom className='prev' alt={'prev'} url={images.prev} />
-						<ImageAtom className='next' alt={'next'} url={images.next} />
+						<ImageAtom
+							className='prev'
+							alt={'prev'}
+							url={isEnd ? icons.prev : icons.prevDisable}
+						/>
+						<ImageAtom
+							className='next'
+							alt={'next'}
+							url={isEnd ? icons.nextDisable : icons.next}
+						/>
 					</C.Buttons>
 				</C.Section>
 			</div>
 
 			<Swiper
+				onReachEnd={() => setIsEnd(true)}
+				onReachBeginning={() => setIsEnd(false)}
 				style={{ width: '100vw', display: 'flex' }}
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={5}

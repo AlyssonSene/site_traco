@@ -23,7 +23,9 @@ import heart from './heart.svg'
 import instagramIcon from './instagramIcon.svg'
 import medal from './medal.svg'
 import next from './next.svg'
+import nextDisable from './nextDisable.svg'
 import nextNews from './nextNews.svg'
+import nextNewsDisable from './nextNewsDisable.svg'
 import path from './path.svg'
 import peace from './peace.svg'
 import peace2 from './peace2.svg'
@@ -31,7 +33,9 @@ import phoneFooter from './phoneFooter.svg'
 import phoneIcon from './phoneIcon.svg'
 import playerIcon from './player.svg'
 import prev from './prev.svg'
+import prevDisable from './prevDisable.svg'
 import prevNews from './prevNews.svg'
+import prevNewsDisable from './prevNewsDisable.svg'
 import smile from './smile.svg'
 import smile2 from './smile2.svg'
 import soonIcon from './soonIcon.svg'
@@ -93,5 +97,9 @@ export const icons = {
 	next,
 	prev,
 	prevNews,
-	nextNews
+	nextNews,
+	prevDisable,
+	nextDisable,
+	prevNewsDisable,
+	nextNewsDisable
 }

@@ -22,9 +22,6 @@ export const HeaderContainer = styled.div`
 	.nextNews {
 		width: 45px;
 	}
-	.prevNews::after {
-		fill: red;
-	}
 `
 export const Title = styled.div`
 	h1 {
@@ -37,7 +34,11 @@ export const Title = styled.div`
 		letter-spacing: 1.92px;
 	}
 `
-export const Buttons = styled.div``
+export const Buttons = styled.div`
+	img {
+		margin: 5px;
+	}
+`
 
 export const CardsContainer = styled.div`
 	display: flex;

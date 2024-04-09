@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -41,6 +41,8 @@ const OurContentOrganism: React.FC = () => {
 		}
 	]
 
+	const [isEnd, setIsEnd] = useState(false)
+
 	return (
 		<C.MainContainer className='section' id='news'>
 			<C.HeaderContainer>
@@ -48,12 +50,22 @@ const OurContentOrganism: React.FC = () => {
 					<TextAtom type={'h1'} text={'Acesse nossos conteúdos'} />
 				</C.Title>
 				<C.Buttons>
-					<ImageAtom className='prevNews' alt={'prev'} url={icons.prevNews} />
-					<ImageAtom className='nextNews' alt={'next'} url={icons.nextNews} />
+					<ImageAtom
+						className='prevNews'
+						alt={'prev'}
+						url={isEnd ? icons.prevNews : icons.prevNewsDisable}
+					/>
+					<ImageAtom
+						className='nextNews'
+						alt={'next'}
+						url={isEnd ? icons.nextNewsDisable : icons.nextNews}
+					/>
 				</C.Buttons>
 			</C.HeaderContainer>
 			<C.CardsContainer>
 				<Swiper
+					onReachEnd={() => setIsEnd(true)}
+					onReachBeginning={() => setIsEnd(false)}
 					style={{ width: '100vw', display: 'flex' }}
 					modules={[Navigation, Pagination, Scrollbar, A11y]}
 					slidesPerView={3}

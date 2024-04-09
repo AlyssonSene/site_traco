@@ -76,9 +76,6 @@ export const Section = styled.div`
 		line-height: 72px;
 		margin-right: 400px;
 	}
-	.swiper-button-disabled {
-		stop-color: red;
-	}
 	.prev,
 	.next {
 		width: 45px;
@@ -88,7 +85,11 @@ export const Title = styled.div`
 	width: auto;
 `
 
-export const Buttons = styled.div``
+export const Buttons = styled.div`
+	img {
+		margin: 5px;
+	}
+`
 
 export const CardsContainer = styled.div`
 	width: 1504px;
