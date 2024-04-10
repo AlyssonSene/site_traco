@@ -26,6 +26,8 @@ import next from './next.svg'
 import nextDisable from './nextDisable.svg'
 import nextNews from './nextNews.svg'
 import nextNewsDisable from './nextNewsDisable.svg'
+import nextProduct from './nextProduct.svg'
+import nextProductDisable from './nextProductDisable.svg'
 import path from './path.svg'
 import peace from './peace.svg'
 import peace2 from './peace2.svg'
@@ -36,6 +38,8 @@ import prev from './prev.svg'
 import prevDisable from './prevDisable.svg'
 import prevNews from './prevNews.svg'
 import prevNewsDisable from './prevNewsDisable.svg'
+import prevProduct from './prevProduct.svg'
+import prevProductDisable from './prevProductDisable.svg'
 import smile from './smile.svg'
 import smile2 from './smile2.svg'
 import soonIcon from './soonIcon.svg'
@@ -101,5 +105,9 @@ export const icons = {
 	prevDisable,
 	nextDisable,
 	prevNewsDisable,
-	nextNewsDisable
+	nextNewsDisable,
+	nextProduct,
+	nextProductDisable,
+	prevProduct,
+	prevProductDisable
 }

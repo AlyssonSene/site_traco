@@ -8,18 +8,7 @@ import ImageAtom from '../atoms/ImageAtom'
 import TextAtom from '../atoms/TextAtom'
 import FormMolecule from './FormMolecule'
 
-const ProductsMolecule: React.FC<ICard> = ({
-	title,
-	description,
-	name,
-	value,
-	startDate,
-	$typeBorder,
-	data,
-	checkmark,
-	paymentType,
-	product
-}) => {
+const ProductsMolecule: React.FC<ICard> = ({ $typeBorder, alt, url, data }) => {
 	const [show, setShow] = useState(false)
 	const handleClose = () => {
 		setShow(false)
@@ -27,56 +16,44 @@ const ProductsMolecule: React.FC<ICard> = ({
 	return (
 		<C.Products $typeBorder={$typeBorder}>
 			<C.ProductTitle>
-				<TextAtom text={title} type={'h1'} />
+				<ImageAtom alt={alt} url={url} />
 			</C.ProductTitle>
-			<C.ProductName>
-				{$typeBorder == 'package1' ? (
-					<TextAtom
-						text={name}
-						type={'h3'}
-						styles={{
-							color: '#FF650A'
-						}}
-					/>
-				) : (
-					<TextAtom
-						text={name}
-						type={'h3'}
-						styles={{
-							color: '#0FBF71'
-						}}
-					/>
-				)}
-			</C.ProductName>
+			<C.DescriptionContainer>
+				<C.ProductSubtitle>
+					<TextAtom text={data.subtitle} type={'h4'} />
+				</C.ProductSubtitle>
+				<C.ProductName>
+					<TextAtom text={data.title} type={'h3'} />
+				</C.ProductName>
+				<C.ProductDescription>
+					<TextAtom text={data.description} type={'h4'} />
+				</C.ProductDescription>
+				<C.FomerContainer>
+					{data.former ? (
+						<TextAtom text={'Formador'} type={'span'} />
+					) : (
+						<TextAtom text={data.extraText} type={'h3'} />
+					)}
+					<TextAtom text={data.former} type={'h5'} />
+					<TextAtom text={data.formerStatus} type={'span'} />
+				</C.FomerContainer>
+				<C.Line />
+			</C.DescriptionContainer>
 			<C.ProductValue>
 				<div>
-					{$typeBorder == 'package1' ? (
-						<TextAtom
-							text={'R$'}
-							type={'span'}
-							styles={{
-								background:
-									'var(--Gradient-OrangePink, linear-gradient(134deg, #ff8139 -10.58%, #FA39B9 92.67%))',
-								backgroundClip: 'text',
-								WebkitBackgroundCclip: 'text',
-								WebkitTextFillColor: 'transparent'
-							}}
-						/>
-					) : (
-						<TextAtom
-							text={'R$'}
-							type={'span'}
-							styles={{
-								background:
-									'var(--Gradient-YellowGreen, linear-gradient(135deg, #F0E13A -5.84%, #17E58A 107.59%))',
-								backgroundClip: 'text',
-								WebkitBackgroundCclip: 'text',
-								WebkitTextFillColor: 'transparent'
-							}}
-						/>
-					)}
 					<TextAtom
-						text={value.toLocaleString('pt-BR', {
+						text={'R$'}
+						type={'span'}
+						styles={{
+							background:
+								'var(--Gradient-OrangePink, linear-gradient(134deg, #ff8139 -10.58%, #FA39B9 92.67%))',
+							backgroundClip: 'text',
+							WebkitBackgroundCclip: 'text',
+							WebkitTextFillColor: 'transparent'
+						}}
+					/>
+					<TextAtom
+						text={data.value.toLocaleString('pt-BR', {
 							style: 'decimal',
 							minimumFractionDigits: 2,
 							maximumFractionDigits: 2
@@ -85,33 +62,8 @@ const ProductsMolecule: React.FC<ICard> = ({
 					/>
 					<TextAtom text={'ou'} type={'h5'} />
 				</div>
-				<TextAtom text={paymentType} type={'h5'} />
 			</C.ProductValue>
-			<C.Line />
-			<C.ProductStartDate>
-				<TextAtom text={startDate} type={'span'} />
-			</C.ProductStartDate>
-			<C.BenefitsContainer>
-				<div>
-					<ImageAtom alt='checkmark' url={checkmark} />
-					<TextAtom text={data.benefits1} type={'span'} />
-				</div>
-				<div>
-					<ImageAtom alt='checkmark' url={checkmark} />
-					<TextAtom text={data.benefits2} type={'span'} />
-				</div>
-				<div>
-					<ImageAtom alt='checkmark' url={checkmark} />
-					<TextAtom text={data.benefits3} type={'span'} />
-				</div>
-				<div>
-					<ImageAtom alt='checkmark' url={checkmark} />
-					<TextAtom text={data.benefits4} type={'span'} />
-				</div>
-			</C.BenefitsContainer>
-			<C.Description>
-				<TextAtom text={description} type={'span'} />
-			</C.Description>
+
 			<C.Buttons>
 				<C.subscribeButton>
 					<ButtonAtom text={'Saiba mais'} onClick={() => setShow(true)} />
@@ -129,7 +81,7 @@ const ProductsMolecule: React.FC<ICard> = ({
 					<CloseButton onClick={handleClose}>
 						<span>x</span>
 					</CloseButton>
-					<FormMolecule handleClose={handleClose} product={product} />
+					<FormMolecule handleClose={handleClose} product={data.title} />
 				</Modal.Body>
 			</Modal>
 		</C.Products>

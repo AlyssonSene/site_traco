@@ -7,7 +7,7 @@ export interface IImageAtom {
 
 export interface ITextAtom {
 	type: string
-	text: string
+	text?: string
 	styles?: {}
 }
 
@@ -21,23 +21,20 @@ export interface IProducts {
 }
 
 type objectData = {
-	benefits1: string
-	benefits2: string
-	benefits3: string
-	benefits4: string
+	title: string
+	subtitle: string
+	description: string
+	value: number
+	extraText?: string
+	former: string
+	formerStatus: string
 }
 
 export interface ICard {
-	title: string
-	name: string
-	value: number
-	startDate: string
-	description: string
-	$typeBorder?: 'package1' | 'package2'
+	alt: string
+	url: string
+	$typeBorder?: 'package1'
 	data: objectData
-	checkmark: string
-	paymentType: string
-	product: string
 }
 
 export interface IHeaderOption {

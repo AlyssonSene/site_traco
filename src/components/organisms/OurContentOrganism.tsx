@@ -16,28 +16,28 @@ import OurContentCardsMolecule from '../molecules/OurContentCardsMolecule'
 const OurContentOrganism: React.FC = () => {
 	const infos = [
 		{
-			link: 'https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W',
-			img: images.podcastImg,
-			text: 'Não perca nosso 1 episódio com o tema Diversidade e inclusão. Neste episódio nossos consultores Bárbara e...',
-			title: 'PODCAST TRAÇO - Episódio 1, Inclusão e Diversidade'
+			link: 'https://www.institutonatura.org/engajamento-alunos-espirito-santo/',
+			img: images.newsImage,
+			text: 'O GRUPO GERAÇÃO PROTAGONISTA é um projeto de mobilização e engajamento da juventude em idade escolar, com metodologia e realização liderados pela Traço...',
+			title: 'PROJETO GERAÇÃO PROTAGONISTA'
 		},
 		{
-			link: 'https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W',
-			img: images.podcastImg,
-			text: 'Não perca nosso 1 episódio com o tema Diversidade e inclusão. Neste episódio nossos consultores Bárbara e...',
-			title: 'PODCAST TRAÇO - Episódio 1, Inclusão e Diversidade'
+			link: 'https://www.institutonatura.org/primeiro-encontro-estudantes-porta-vozes-emi/',
+			img: images.newsImage2,
+			text: 'O projeto ESTUDANTES PORTA-VOZES DO ENSINO MÉDIO INTEGRAL foi criada pela Traço, através do contrato com o Instituto Natura no ano de 2021 para atender...',
+			title: 'PROJETO ESTUDANTES PORTA VOZES DO EMI'
 		},
 		{
-			link: 'https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W',
-			img: images.podcastImg,
-			text: 'Não perca nosso 1 episódio com o tema Diversidade e inclusão. Neste episódio nossos consultores Bárbara e...',
-			title: 'PODCAST TRAÇO - Episódio 1, Inclusão e Diversidade'
+			link: 'https://www.institutonatura.org/boas-praticas-no-emi/',
+			img: images.newsImage3,
+			text: 'A Traço através do contrato com o Instituto Natura criou em 2020, uma iniciativa de relacionamento e mobilização das equipes das Secretariais Estaduais de Educação que implementam o Ensino Médio Integral...',
+			title: 'EDITAL DE BOAS PRÁTICAS DO ENSINO MÉDIO INTEGRAL'
 		},
 		{
-			link: 'https://www.youtube.com/watch?v=snBgNDLRhD0&list=PLdVT9KMnIVcAm35VfZ7U4JphUqXb2R94W',
-			img: images.podcastImg,
-			text: 'Não perca nosso 1 episódio com o tema Diversidade e inclusão. Neste episódio nossos consultores Bárbara e...',
-			title: 'PODCAST TRAÇO - Episódio 1, Inclusão e Diversidade'
+			link: 'https://www.institutonatura.org/embaixadoras-crer-para-ver/#:~:text=Para%20aproximar%20as%20Embaixadoras%20de,elas%20foram%20transformadas%20pelo%20EMI.',
+			img: images.newsImage4,
+			text: 'No trabalho de mobilização por causas é importante trazermos personagens beneficiadas que tiveram suas vidas transformadas pelas ações das instituições. A Natura tem uma linha de produtos...',
+			title: 'EVENTO ANUAL DAS EMBAIXADORAS NATURA CRER PARA VER'
 		}
 	]
 

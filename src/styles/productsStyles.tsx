@@ -11,34 +11,15 @@ export const ProductsContainer = styled.section`
 export const TitleContainer = styled.div`
 	display: flex;
 	margin-bottom: 79px;
-	h1 {
-		color: #1f2325;
-		text-align: center;
-		font-family: 'Montserrat Alternates';
-		font-size: 48px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 72px;
-		letter-spacing: 1.92px;
-	}
-
-	span {
-		margin-right: 15px;
-		color: #1f2325;
-		text-align: center;
-		font-family: 'Montserrat Alternates';
-		font-size: 48px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 72px;
-		letter-spacing: 1.92px;
+	img {
+		width: 100%;
 	}
 `
 
 export const CardsContainer = styled.div`
 	display: flex;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 `
 
@@ -81,11 +62,78 @@ export const ProductTitle = styled.div`
 	}
 `
 
+export const DescriptionContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+	margin: 40px 32px 0;
+`
+
+export const ProductSubtitle = styled.div`
+	width: 268px;
+	h4 {
+		color: #1f2325;
+		font-family: 'Inter';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+	}
+`
+
+export const ProductDescription = styled.div`
+	width: 288px;
+	margin-top: 25px;
+	h4 {
+		color: #1f2325;
+		font-family: 'Inter';
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+	}
+`
+export const FomerContainer = styled.div`
+	h5 {
+		margin-top: 5px;
+		color: #1f2325;
+		font-family: 'Inter';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+	}
+	span {
+		color: #656c78;
+		font-family: 'Inter';
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+	}
+	h3 {
+		color: #fa39b9;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 21px;
+		text-transform: uppercase;
+	}
+`
+
 export const ProductName = styled.div`
 	display: flex;
+	width: max-content;
+	padding: 10px;
+	margin-top: 10px;
 	justify-content: flex-start;
-	margin: 24px 39px;
+	align-items: center;
+	border-radius: 4px;
+	background: #feebe0;
 	h3 {
+		margin: 0;
 		color: #ff650a;
 		font-family: 'Inter';
 		font-size: 14px;
@@ -98,7 +146,7 @@ export const ProductName = styled.div`
 export const ProductValue = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 24px 39px 0;
+	margin: 0 39px 0;
 	h5 {
 		margin-top: 8px;
 		color: #656c78;
@@ -146,7 +194,7 @@ export const ProductValue = styled.div`
 `
 
 export const Line = styled.div`
-	margin: 40px 10%;
+	margin: 20px 10%;
 	width: 80%;
 	height: 2px;
 	background: #d0d9e5;
@@ -160,27 +208,6 @@ export const ProductStartDate = styled.div`
 	font-weight: 500;
 	line-height: normal;
 	text-align: center;
-`
-
-export const BenefitsContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	div {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-around;
-		span {
-			width: 248px;
-			color: #1f2325;
-			font-family: Inter;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 21px;
-			margin-bottom: 24px;
-		}
-	}
 `
 
 export const Description = styled.div`
@@ -199,6 +226,17 @@ export const Buttons = styled.div`
 	display: flex;
 	justify-content: center;
 `
+export const ButtonsController = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 180px;
+	align-items: center;
+	img {
+		margin: 25px 15px;
+	}
+`
+
 export const subscribeButton = styled.div`
 	width: 50%;
 	height: 55px;

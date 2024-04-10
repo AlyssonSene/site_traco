@@ -1,43 +1,61 @@
-import React from 'react'
-import { icons } from '../../assets/icons'
+import React, { useState } from 'react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { icons } from '../../assets/icons/index.ts'
+import { images } from '../../assets/images'
 import * as C from '../../styles/productsStyles'
-import data from '../../utils/dictionary.json'
-import TextAtom from '../atoms/TextAtom'
+import { products } from '../../utils/dictionary.ts'
+import ImageAtom from '../atoms/ImageAtom'
 import ProductsDescriptionMolecule from '../molecules/ProductsDescriptionMolecule'
 import ProductsMolecule from '../molecules/ProductsMolecule'
 
 const ProductsPageOrganism: React.FC = () => {
+	const [isEnd, setIsEnd] = useState(false)
 	return (
 		<C.ProductsContainer className='section' id='products'>
 			<C.TitleContainer>
-				<TextAtom text={'Conheça o'} type='span' />
-				<TextAtom text={'Escola Melhor Para Todos'} type='h1' />
+				<ImageAtom alt={'background'} url={images.newBackground} />
 			</C.TitleContainer>
+			<C.ButtonsController>
+				<ImageAtom
+					className='prevProduct'
+					alt={'prevProduct'}
+					url={isEnd ? icons.prevProduct : icons.prevProductDisable}
+				/>
+				<ImageAtom
+					className='nextProduct'
+					alt={'nextProduct'}
+					url={isEnd ? icons.nextProductDisable : icons.nextProduct}
+				/>
+			</C.ButtonsController>
 			<C.CardsContainer>
-				<ProductsMolecule
-					product='Pacote 1'
-					paymentType={'R$ 700,00/mês parcelados em até 6x'}
-					checkmark={icons.checkIcon}
-					$typeBorder={'package1'}
-					title={data.products[0].title}
-					description={data.products[0].description}
-					name={data.products[0].name}
-					value={data.products[0].value}
-					startDate={data.products[0].startDate}
-					data={data.products[0].package}
-				/>
-				<ProductsMolecule
-					product='Pacote 2'
-					paymentType={'R$ 620,00/mês parcelados em até 10x'}
-					checkmark={icons.checkmark}
-					$typeBorder={'package2'}
-					title={data.products[1].title}
-					description={data.products[1].description}
-					name={data.products[1].name}
-					value={data.products[1].value}
-					startDate={data.products[1].startDate}
-					data={data.products[1].package}
-				/>
+				<Swiper
+					onReachEnd={() => setIsEnd(true)}
+					onReachBeginning={() => setIsEnd(false)}
+					navigation={{ nextEl: '.nextProduct', prevEl: '.prevProduct' }}
+					modules={[Navigation, Pagination, Scrollbar, A11y]}
+					spaceBetween={5}
+					slidesPerView={2}
+					style={{ display: 'flex', width: '45%', margin: '0' }}
+				>
+					{products.map((product, index) => {
+						return (
+							<SwiperSlide key={index}>
+								<ProductsMolecule
+									data={product}
+									$typeBorder={'package1'}
+									url={product.image}
+									alt={products[index].image}
+								/>
+							</SwiperSlide>
+						)
+					})}
+				</Swiper>
+
 				<ProductsDescriptionMolecule />
 			</C.CardsContainer>
 		</C.ProductsContainer>

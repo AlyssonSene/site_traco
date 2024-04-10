@@ -5,8 +5,18 @@ import image3 from './image3.png'
 import image4 from './image4.png'
 import imgContent2 from './imgContent2.png'
 import imgContent3 from './imgContetent3.png'
+import newBackground from './newBackgorund.png'
+import newsImage from './newsImage.png'
+import newsImage2 from './newsImage2.png'
+import newsImage3 from './newsImage3.png'
+import newsImage4 from './newsImage4.png'
 import next from './next.png'
-import podcastImg from './podcastImg.png'
+import p1 from './p1.png'
+import p2 from './p2.png'
+import p3 from './p3.png'
+import p4 from './p4.png'
+import p5 from './p5.png'
+import p6 from './p6.png'
 import prev from './prev.png'
 import profile1 from './profile1.png'
 import profile2 from './profile2.png'
@@ -34,10 +44,20 @@ export const images = {
 	thumb4,
 	imgContent3,
 	imgContent2,
-	podcastImg,
 	ellipse1,
 	ellipse2,
 	ellipse3,
 	next,
-	prev
+	prev,
+	newBackground,
+	p1,
+	p2,
+	p3,
+	p4,
+	p5,
+	p6,
+	newsImage,
+	newsImage2,
+	newsImage3,
+	newsImage4
 }
