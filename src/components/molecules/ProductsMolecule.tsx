@@ -60,8 +60,13 @@ const ProductsMolecule: React.FC<ICard> = ({ $typeBorder, alt, url, data }) => {
 						})}
 						type={'h2'}
 					/>
-					<TextAtom text={'ou'} type={'h5'} />
+					{data.extraText && <TextAtom text={'ou'} type={'h5'} />}
 				</div>
+				{data.extraText && (
+					<C.Payment>
+						<TextAtom text={'em ate 3x de R$150,00'} type={'h6'} />
+					</C.Payment>
+				)}
 			</C.ProductValue>
 
 			<C.Buttons>

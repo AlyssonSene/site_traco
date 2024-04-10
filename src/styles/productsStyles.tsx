@@ -259,3 +259,17 @@ export const subscribeButton = styled.div`
 		cursor: pointer;
 	}
 `
+export const Payment = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	h6 {
+		text-align: end;
+		color: #656c78;
+		font-family: 'Inter';
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+`
