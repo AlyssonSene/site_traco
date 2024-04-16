@@ -4,6 +4,7 @@ import ButtonsMolecule from './ButtonsMolecule'
 import SloganMolecule from './SloganMolecule'
 import StudentsMolecule from './StudentsMolecule'
 import SubtitleMolecule from './SubtitleMolecule'
+import VideoMolecule from './VideoMolecule'
 
 const HomeContainerMolecule: React.FC = () => {
 	return (
@@ -13,6 +14,7 @@ const HomeContainerMolecule: React.FC = () => {
 				<SloganMolecule />
 				<SubtitleMolecule />
 				<ButtonsMolecule />
+				<VideoMolecule />
 			</C.CenterContainer>
 		</C.HomeContainer>
 	)

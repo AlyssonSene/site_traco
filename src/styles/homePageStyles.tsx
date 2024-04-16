@@ -1,21 +1,20 @@
 import styled from 'styled-components'
 import background from '../assets/images/background.png'
 
-export const MainPage = styled.section`
+export const MainPage = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 `
 
 export const HomeContainer = styled.div`
-	height: 95vh;
 	display: flex;
 	justify-content: center;
 	width: 99%;
 `
 
 export const CenterContainer = styled.div`
-	width: 100%;
+	width: 100rem;
 	height: 1040px;
 	margin: 0 50px;
 	display: flex;
@@ -28,7 +27,7 @@ export const CenterContainer = styled.div`
 	margin-top: 120px;
 	h1 {
 		font-family: 'Montserrat Alternates';
-		font-size: 64px;
+		font-size: 3rem;
 		font-weight: 700;
 		line-height: 96px;
 		letter-spacing: 0em;
@@ -41,11 +40,12 @@ export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 85%;
-	height: 54rem;
+	width: 80%;
+	height: 39em;
 	border-radius: 26px;
 	background: rgba(33, 36, 41, 0.2);
-	position: relative;
+	position: absolute;
+	top: 50em;
 	img {
 		border-radius: 16px;
 	}
@@ -111,7 +111,7 @@ export const SloganContainer = styled.div`
 	display: flex;
 	text-align: center;
 	flex-direction: column;
-	width: 70%;
+	width: 50rem;
 	position: relative;
 	h1 {
 		color: #fff;
@@ -122,15 +122,17 @@ export const SloganContainer = styled.div`
 export const Traco = styled.span`
 	position: absolute;
 	top: 35%;
-	left: calc(75% - 10%);
-	width: 291.341px;
+	left: 60%;
 	transform: rotate(-0.352deg);
 	stroke-width: 8px;
 	stroke: #17e58a;
+	img {
+		width: 90%;
+	}
 `
 
 export const SubtitleContainer = styled.div`
-	width: 707px;
+	width: 70%;
 	margin-top: 15px;
 	h4 {
 		color: #d1d5dc;

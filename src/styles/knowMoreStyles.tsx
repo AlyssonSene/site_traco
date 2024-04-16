@@ -56,29 +56,30 @@ export const TitleContainer = styled.div`
 
 export const CardsContainer = styled.div`
 	display: flex;
-	justify-content: space-evenly;
-	width: 90%;
+	flex-wrap: wrap;
 	margin-bottom: 32px;
+	justify-content: space-around;
 `
 
 export const Cards = styled.div`
-	width: 480px;
-	height: 429px;
+	width: max-content;
+	height: 400px;
 	border-radius: 24px;
 	border: 1px solid #d0d9e5;
 	background: #fff;
+	margin-bottom: 30px;
 `
 
 export const IconElipse = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 64px;
-	height: 64px;
+	width: 54px;
+	height: 54px;
 	border-radius: 50%;
 	background-color: #cffce8;
-	margin-top: 75px;
-	margin-left: 56px;
+	margin-top: 50px;
+	margin-left: 50px;
 	img {
 		width: 32px;
 		height: 32px;

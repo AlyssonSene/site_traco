@@ -41,8 +41,7 @@ const KnowMoreOrganismo: React.FC = () => {
 						'Mobilização e engajamento demandam o reconhecimento do público e a criação de vínculos com a causa. Trabalhamos na definição e implementação de soluções, especialmente voltadas para jovens ou ações com foco na juventude.'
 					}
 				/>
-			</C.CardsContainer>
-			<C.CardsContainer>
+
 				<CardsMolecule
 					url={icons.guitar}
 					title={'Eventos'}

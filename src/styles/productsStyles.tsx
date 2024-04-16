@@ -10,7 +10,7 @@ export const ProductsContainer = styled.section`
 
 export const TitleContainer = styled.div`
 	display: flex;
-	margin-bottom: 79px;
+	margin-top: 150px;
 	img {
 		width: 100%;
 	}
@@ -18,18 +18,20 @@ export const TitleContainer = styled.div`
 
 export const CardsContainer = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-evenly;
+	align-items: flex-start;
 `
 
 export const Products = styled.div<IProducts>`
 	display: flex;
 	flex-direction: column;
-	width: 352px;
-	height: 867px;
+	align-items: center;
+	width: 325px;
+	margin: 20px;
 	border-radius: 24px;
-
+	margin-bottom: 20px;
 	${({ $typeBorder }) =>
 		$typeBorder == 'package1' &&
 		`background:
@@ -43,13 +45,16 @@ export const Products = styled.div<IProducts>`
 		  linear-gradient(white, white) padding-box,
 		  linear-gradient(135deg, #F0E13A -5.84%, #17E58A 107.59%) border-box;
 	    border: 3px solid transparent;
-  `}
+  `};
+	.css-eqpfi5-MuiAccordionSummary-content.Mui-expanded {
+		margin: 0;
+	}
 `
 
 export const ProductTitle = styled.div`
 	display: flex;
-	justify-content: flex-start;
-	margin: 32px 0 0 32px;
+	justify-content: center;
+	margin-top: 32px;
 	h1 {
 		color: #1f2325;
 		text-align: center;
@@ -59,6 +64,9 @@ export const ProductTitle = styled.div`
 		font-weight: 700;
 		line-height: normal;
 		letter-spacing: 1.28px;
+	}
+	img {
+		max-height: 90%;
 	}
 `
 
@@ -146,7 +154,7 @@ export const ProductName = styled.div`
 export const ProductValue = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 0 39px 0;
+	align-items: center;
 	h5 {
 		margin-top: 8px;
 		color: #656c78;
@@ -234,18 +242,19 @@ export const ButtonsController = styled.div`
 	align-items: center;
 	img {
 		margin: 25px 15px;
+		width: 32px;
 	}
 `
 
 export const subscribeButton = styled.div`
-	width: 50%;
+	width: 9rem;
 	height: 55px;
 	border-radius: 16px;
 	background: #550261;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	margin: 30px 10px;
+	margin-bottom: 10px;
 	button {
 		background-color: transparent;
 		border: none;
