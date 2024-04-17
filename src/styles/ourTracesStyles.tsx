@@ -68,6 +68,7 @@ export const CenterContainer = styled.div`
 	display: flex;
 	height: 744px;
 	flex-shrink: 0;
+	justify-content: space-evenly;
 `
 export const TracesContainer = styled.div`
 	display: flex;
@@ -126,7 +127,7 @@ export const Line = styled.div<ITraceCard>`
 
 export const TraceCards = styled.div<ITraceCard>`
 	cursor: pointer;
-	width: 90%;
+	width: 95%;
 	height: 150px;
 	display: flex;
 	align-items: center;

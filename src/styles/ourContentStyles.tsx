@@ -85,7 +85,7 @@ export const TextModal = styled.div`
 	flex-direction: column;
 	padding: 3.8em;
 	text-align: center;
-	overflow: scroll;
+	overflow: auto;
 	span {
 		font-family: 'Inter';
 	}
