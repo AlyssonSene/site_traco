@@ -18,7 +18,7 @@ export const Header = styled.div`
 
 	span {
 		color: #ff650a;
-		font-family: Inter;
+		font-family: 'Inter';
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 600;
@@ -40,7 +40,7 @@ export const TitleContainer = styled.div`
 		color: #1f2325;
 		text-align: center;
 		font-family: 'Montserrat Alternates';
-		font-size: 48px;
+		font-size: 3em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 72px;
@@ -62,8 +62,8 @@ export const CardsContainer = styled.div`
 `
 
 export const Cards = styled.div`
-	width: max-content;
-	height: 400px;
+	width: 410px;
+	height: 380px;
 	border-radius: 24px;
 	border: 1px solid #d0d9e5;
 	background: #fff;
@@ -87,12 +87,12 @@ export const IconElipse = styled.div`
 `
 
 export const TitleCard = styled.div`
-	margin-left: 56px;
-	margin-top: 32px;
+	margin-left: 50px;
+	margin-top: 30px;
 	h4 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';
-		font-size: 24px;
+		font-size: 1.2em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 36px;
@@ -100,14 +100,13 @@ export const TitleCard = styled.div`
 `
 
 export const TextCard = styled.div`
-	width: 370px;
+	width: 330px;
 	height: 169px;
-	margin: 12px 56px;
-
+	margin: 12px 50px;
 	span {
 		color: #656c78;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 0.9em;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 27px;

@@ -26,8 +26,8 @@ const VideoModalMolecule: React.FC<IVideoModal> = ({ url, thumb }) => {
 						<span>x</span>
 					</CloseButton>
 					<ReactPlayer
-						width={'auto'}
-						height={'711px'}
+						width={'98%'}
+						height={'96%'}
 						url={url}
 						controls={true}
 						playing={true}

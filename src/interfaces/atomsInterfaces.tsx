@@ -85,6 +85,7 @@ export interface IContentCards {
 	text: string
 	title: string
 	link?: string
+	resume: string
 }
 
 export interface IInputAtom {

@@ -35,8 +35,8 @@ const OurValuesOrganism: React.FC = () => {
 			</C.Section>
 			<C.VideoContainer>
 				<ReactPlayer
-					width={'1243px'}
-					height={'711px'}
+					width={'98%'}
+					height={'96%'}
 					url={'https://www.youtube.com/watch?v=t6J85pTCHZE'}
 					controls={true}
 					playIcon={<PlayerAtom icon={icons.videoPlayer} />}

@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
 `
 
 export const CenterContainer = styled.div`
-	width: 100rem;
+	width: 95%;
 	height: 1040px;
 	margin: 0 50px;
 	display: flex;

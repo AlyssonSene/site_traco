@@ -20,14 +20,14 @@ export const HeaderContainer = styled.div`
 	padding: 125px;
 	.prevNews,
 	.nextNews {
-		width: 45px;
+		width: 35px;
 	}
 `
 export const Title = styled.div`
 	h1 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';
-		font-size: 48px;
+		font-size: 2.3rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
@@ -45,9 +45,7 @@ export const CardsContainer = styled.div`
 	justify-content: space-evenly;
 	height: 100%;
 	width: 100%;
-	.swiper {
-		padding: 0 50px;
-	}
+
 	.swiper-slide {
 		display: flex;
 		justify-content: center;
@@ -64,15 +62,15 @@ export const CardsContainer = styled.div`
 
 export const Cards = styled.div`
 	flex-direction: column;
-	width: 450px;
-	height: 560px;
+	width: 400px;
+	height: 480px;
 	border-radius: 24px;
 	border: 1px solid #d0d9e5;
 	background: #fff;
 	display: flex;
 	align-items: center;
 	.image {
-		width: 450px;
+		width: 400px;
 	}
 `
 export const TextsContainer = styled.div`
@@ -82,14 +80,20 @@ export const TextsContainer = styled.div`
 	flex-grow: 1;
 	padding: 32px;
 `
-
+export const TextModal = styled.div`
+	display: flex;
+	padding: 3.8em;
+	text-align: center;
+	overflow: scroll;
+	span {
+		font-family: 'Inter';
+	}
+`
 export const TitleCard = styled.div`
-	width: 416px;
-	height: 54px;
 	h1 {
 		color: #1f2325;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 1rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 27px;
@@ -100,10 +104,27 @@ export const TextCard = styled.div`
 	h5 {
 		color: #68717e;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 0.9rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 27px;
+	}
+`
+export const CloseButton = styled.div`
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	margin: 4px 22px;
+	width: 33px;
+	height: 33px;
+	background: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	filter: drop-shadow(0px 5px 10px rgba(47, 99, 163, 0.15));
+	span {
+		font-size: 20px;
 	}
 `
 
@@ -114,7 +135,7 @@ export const AboutMore = styled.div`
 		cursor: pointer;
 		color: #ff650a;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 0.9rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 27px;
@@ -132,7 +153,7 @@ export const Footer = styled.div`
 export const FooterText = styled.div`
 	display: flex;
 	justify-content: space-around;
-	width: 450px;
+	width: 410px;
 	align-items: center;
 	span {
 		color: #656c78;

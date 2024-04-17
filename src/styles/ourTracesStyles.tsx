@@ -50,7 +50,7 @@ export const Title = styled.div`
 	h1 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';
-		font-size: 48px;
+		font-size: 3rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 72px;
@@ -66,8 +66,6 @@ export const Title = styled.div`
 
 export const CenterContainer = styled.div`
 	display: flex;
-	justify-content: space-between;
-	margin: 0 174px;
 	height: 744px;
 	flex-shrink: 0;
 `
@@ -75,7 +73,6 @@ export const TracesContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 999px;
 	height: 744px;
 `
 
@@ -129,8 +126,8 @@ export const Line = styled.div<ITraceCard>`
 
 export const TraceCards = styled.div<ITraceCard>`
 	cursor: pointer;
-	width: 999px;
-	height: 168px;
+	width: 90%;
+	height: 150px;
 	display: flex;
 	align-items: center;
 	border-radius: 24px;
@@ -150,14 +147,12 @@ export const EmojContainer = styled.div<ITraceCard>`
 	align-items: center;
 	justify-content: center;
 	width: 80px;
-	height: 80px;
+	height: 70px;
 	background: #d0d9e5;
 	border-radius: 50%;
-	margin: 0 48px;
+	margin: 0 40px;
 	img {
 		stop-color: #220c1a;
-		width: 40px;
-		height: 40px;
 	}
 	${({ $isSelected }) =>
 		$isSelected &&
@@ -170,7 +165,7 @@ export const TextContainer = styled.div`
 	h2 {
 		color: #1f2325;
 		font-family: 'Montserrat Alternates';
-		font-size: 24px;
+		font-size: 1.2em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 36px;
@@ -178,7 +173,7 @@ export const TextContainer = styled.div`
 	span {
 		color: #656c78;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 1em;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 27px;

@@ -16,9 +16,7 @@ export const MainContainer = styled.div`
 		align-items: center;
 		width: 100%;
 	}
-	.swiper {
-		padding: 0 50px;
-	}
+
 	.swiper-slide {
 		display: flex;
 		justify-content: center;
@@ -48,11 +46,10 @@ export const Text = styled.div`
 	height: 40px;
 	border-radius: 8px;
 	background: #ffc5eb;
-	margin-bottom: 40px;
 	span {
 		color: #fa39b9;
 		font-family: 'Inter';
-		font-size: 14px;
+		font-size: 0.9em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
@@ -66,11 +63,11 @@ export const Section = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 125px;
+	padding: 110px;
 	h1 {
 		color: #fff;
 		font-family: 'Montserrat Alternates';
-		font-size: 48px;
+		font-size: 2.3rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 72px;
@@ -78,7 +75,7 @@ export const Section = styled.div`
 	}
 	.prev,
 	.next {
-		width: 45px;
+		width: 30px;
 	}
 `
 export const Title = styled.div`
@@ -90,26 +87,6 @@ export const Buttons = styled.div`
 		margin: 5px;
 	}
 `
-
-export const CardsContainer = styled.div`
-	width: 1504px;
-	display: flex;
-	justify-content: space-between;
-	height: 360px;
-	margin: 0;
-`
-
-export const Cards = styled.div`
-	width: 480px;
-	display: flex;
-	flex-direction: column;
-	height: 360px;
-	border-radius: 24px;
-	background: #f8e8f2;
-	padding: 32px 40px;
-	justify-content: space-between;
-`
-
 export const PerfilContainer = styled.div`
 	display: flex;
 	img {
@@ -155,8 +132,8 @@ export const VideosContainer = styled.div`
 `
 
 export const VideoCard = styled.div`
-	width: 481px;
-	height: 365px;
+	width: 420px;
+	height: 320px;
 	border-radius: 26px;
 	background: rgba(219, 226, 238, 0.2);
 	display: flex;
@@ -164,8 +141,8 @@ export const VideoCard = styled.div`
 	justify-content: space-evenly;
 	cursor: pointer;
 	img {
-		width: 460px;
-		height: 344px;
+		width: 400px;
+		height: auto;
 		flex-shrink: 0;
 	}
 `

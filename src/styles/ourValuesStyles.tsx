@@ -53,7 +53,7 @@ export const Title = styled.div`
 	h1 {
 		color: #550261;
 		font-family: 'Montserrat Alternates';
-		font-size: 40px;
+		font-size: 2.2em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 60px;
@@ -64,7 +64,7 @@ export const Text = styled.div`
 	span {
 		color: #656c78;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 0.98rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 27px;
@@ -75,8 +75,8 @@ export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1275px;
-	height: 742px;
+	width: 90%;
+	height: 39em;
 	border-radius: 26px;
 	background: rgba(58, 66, 80, 0.2);
 	div {

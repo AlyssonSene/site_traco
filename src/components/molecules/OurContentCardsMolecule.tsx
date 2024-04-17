@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal } from 'react-bootstrap'
 import { icons } from '../../assets/icons'
 import { IContentCards } from '../../interfaces/atomsInterfaces'
 import * as C from '../../styles/ourContentStyles'
@@ -9,8 +10,11 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 	img,
 	title,
 	text,
-	link
+	link,
+	resume
 }) => {
+	const [show, setShow] = useState(false)
+	const handleClose = () => setShow(false)
 	return (
 		<C.Cards>
 			<div>
@@ -21,8 +25,8 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 					<TextAtom type={'h1'} text={title} />
 				</C.TitleCard>
 
-				<C.TextCard>
-					<TextAtom type={'h5'} text={text} />
+				<C.TextCard onClick={() => setShow(true)}>
+					<TextAtom type={'h5'} text={resume} />
 				</C.TextCard>
 				<C.AboutMore>
 					<a href={link} target='_blank'>
@@ -32,6 +36,23 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 					<ImageAtom alt={'icone de seta'} url={icons.arrowLeft} />
 				</C.AboutMore>
 			</C.TextsContainer>
+			<Modal
+				size='lg'
+				dialogClassName='modal-30w'
+				show={show}
+				onHide={handleClose}
+				backdrop='static'
+				keyboard={false}
+			>
+				<Modal.Body>
+					<C.CloseButton onClick={handleClose}>
+						<span>x</span>
+					</C.CloseButton>
+					<C.TextModal>
+						<TextAtom type={'span'} text={text} />
+					</C.TextModal>
+				</Modal.Body>
+			</Modal>
 		</C.Cards>
 	)
 }
