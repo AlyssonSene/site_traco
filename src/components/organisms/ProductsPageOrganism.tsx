@@ -15,7 +15,7 @@ const ProductsPageOrganism: React.FC = () => {
 			<C.TitleContainer>
 				<ImageAtom alt={'background'} url={images.newBackground} />
 			</C.TitleContainer>
-			<C.CardsContainer className='section' id='products'>
+			<C.CardsContainer>
 				{products.map((product, index) => {
 					return (
 						<ProductsMolecule
