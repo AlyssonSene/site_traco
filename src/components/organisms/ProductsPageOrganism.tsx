@@ -11,7 +11,7 @@ import ProductsMolecule from '../molecules/ProductsMolecule'
 
 const ProductsPageOrganism: React.FC = () => {
 	return (
-		<C.ProductsContainer>
+		<C.ProductsContainer className='section' id='products'>
 			<C.TitleContainer>
 				<ImageAtom alt={'background'} url={images.newBackground} />
 			</C.TitleContainer>
