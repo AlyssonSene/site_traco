@@ -82,6 +82,7 @@ export const TextsContainer = styled.div`
 `
 export const TextModal = styled.div`
 	display: flex;
+	flex-direction: column;
 	padding: 3.8em;
 	text-align: center;
 	overflow: scroll;

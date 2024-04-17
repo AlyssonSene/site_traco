@@ -49,6 +49,9 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 						<span>x</span>
 					</C.CloseButton>
 					<C.TextModal>
+						<C.TitleCard>
+							<TextAtom type={'h1'} text={title} />
+						</C.TitleCard>
 						<TextAtom type={'span'} text={text} />
 					</C.TextModal>
 				</Modal.Body>
