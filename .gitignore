@@ -12,8 +12,8 @@ dist
 dist-ssr
 *.local
 src/assets/videos/*
-.firebase/*
-
+.firebase
+firebase.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
