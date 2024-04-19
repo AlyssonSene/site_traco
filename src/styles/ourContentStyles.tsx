@@ -62,6 +62,7 @@ export const CardsContainer = styled.div`
 
 export const Cards = styled.div`
 	flex-direction: column;
+	cursor: pointer;
 	width: 400px;
 	height: 480px;
 	border-radius: 24px;
@@ -102,6 +103,7 @@ export const TitleCard = styled.div`
 `
 
 export const TextCard = styled.div`
+	cursor: pointer;
 	h5 {
 		color: #68717e;
 		font-family: 'Inter';

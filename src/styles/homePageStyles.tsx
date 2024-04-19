@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import background from '../assets/images/background.png'
 
-export const MainPage = styled.div`
+export const MainPage = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;

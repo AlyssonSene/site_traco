@@ -71,7 +71,6 @@ export const Section = styled.div`
 		font-style: normal;
 		font-weight: 500;
 		line-height: 72px;
-		margin-right: 400px;
 	}
 	.prev,
 	.next {
@@ -83,6 +82,7 @@ export const Title = styled.div`
 `
 
 export const Buttons = styled.div`
+	display: flex;
 	img {
 		margin: 5px;
 	}

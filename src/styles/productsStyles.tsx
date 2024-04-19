@@ -219,17 +219,71 @@ export const ProductStartDate = styled.div`
 `
 
 export const Description = styled.div`
-	width: 288px;
+	width: 75%;
 	margin: 0 32px;
+	padding: 35px;
+	text-align: center;
 	span {
 		color: #656c78;
-		font-family: Inter;
-		font-size: 14px;
+		font-family: 'Inter';
+		font-size: 1.1em;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 21px;
 	}
 `
+
+export const Versions = styled.div`
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	h5 {
+		font-family: 'Inter';
+		color: #656c78;
+		font-size: 1.1em;
+	}
+	& > div {
+		width: 35%;
+		text-align: center;
+		margin: 30px;
+		span {
+			font-family: 'Inter';
+			color: #656c78;
+			font-size: 0.87em;
+		}
+		h6 {
+			width: 50%;
+			text-align: start;
+			margin-top: 35px;
+			font-family: 'Inter';
+			color: #656c78;
+			font-size: 0.8em;
+			font-weight: 400;
+		}
+	}
+`
+
+export const Button = styled.div`
+	display: flex;
+	flex-wrap: nowrap;
+	button {
+		margin-top: 50px;
+		height: 35px;
+		width: 35%;
+		border-radius: 8px;
+		border: none;
+		background-color: #550261;
+		color: white;
+		text-align: center;
+		font-family: 'Inter';
+		font-size: 0.8em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 27px;
+		cursor: pointer;
+	}
+`
+
 export const Buttons = styled.div`
 	display: flex;
 	justify-content: center;

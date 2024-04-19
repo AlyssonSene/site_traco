@@ -14,9 +14,14 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 	resume
 }) => {
 	const [show, setShow] = useState(false)
-	const handleClose = () => setShow(false)
+
+	const closeModal = () => {
+		setShow(false)
+		console.log('clicou')
+	}
+
 	return (
-		<C.Cards>
+		<C.Cards onClick={() => setShow(!show)}>
 			<div>
 				<ImageAtom alt={'imagem'} url={img} className={'image'} />
 			</div>
@@ -25,27 +30,20 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 					<TextAtom type={'h1'} text={title} />
 				</C.TitleCard>
 
-				<C.TextCard onClick={() => setShow(true)}>
+				<C.TextCard>
 					<TextAtom type={'h5'} text={resume} />
 				</C.TextCard>
-				<C.AboutMore>
-					<a href={link} target='_blank'>
-						<TextAtom type={'span'} text={'Saiba mais'} />
-					</a>
-
-					<ImageAtom alt={'icone de seta'} url={icons.arrowLeft} />
-				</C.AboutMore>
 			</C.TextsContainer>
 			<Modal
 				size='lg'
 				dialogClassName='modal-30w'
 				show={show}
-				onHide={handleClose}
+				onHide={closeModal}
 				backdrop='static'
 				keyboard={false}
 			>
 				<Modal.Body>
-					<C.CloseButton onClick={handleClose}>
+					<C.CloseButton onClick={closeModal}>
 						<span>x</span>
 					</C.CloseButton>
 					<C.TextModal>
@@ -54,6 +52,15 @@ const OurContentCardsMolecule: React.FC<IContentCards> = ({
 						</C.TitleCard>
 						<TextAtom type={'span'} text={text} />
 					</C.TextModal>
+					<Modal.Footer>
+						<C.AboutMore>
+							<a href={link} target='_blank'>
+								<TextAtom type={'span'} text={'Saiba mais'} />
+							</a>
+
+							<ImageAtom alt={'icone de seta'} url={icons.arrowLeft} />
+						</C.AboutMore>
+					</Modal.Footer>
 				</Modal.Body>
 			</Modal>
 		</C.Cards>
