@@ -55,7 +55,7 @@ const OurContentOrganism: React.FC = () => {
 					onReachBeginning={() => setIsEnd(false)}
 					style={{ width: '100vw', display: 'flex' }}
 					modules={[Navigation, Pagination, Scrollbar, A11y]}
-					slidesPerView={windowWidth <= 425 ? 1 : 3}
+					slidesPerView={windowWidth <= 576 ? 1 : 3}
 					navigation={{ nextEl: '.nextNews', prevEl: '.prevNews' }}
 				>
 					{infos.map((info, index) => (

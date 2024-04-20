@@ -84,7 +84,7 @@ const FeedbackOrganism: React.FC = () => {
 				style={{ width: '100vw', display: 'flex' }}
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={5}
-				slidesPerView={windowWidth <= 425 ? 1 : 3}
+				slidesPerView={windowWidth < 576 ? 1 : 3}
 				navigation={{ nextEl: '.next', prevEl: '.prev' }}
 			>
 				{videos.map((video, index) => (
