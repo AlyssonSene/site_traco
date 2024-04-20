@@ -6,7 +6,10 @@ import TextAtom from '../atoms/TextAtom'
 const SloganMolecule: React.FC = () => {
 	return (
 		<SloganContainer>
-			<TextAtom text='Venha traçar seu caminho junto com a gente' type='h1' />
+			<TextAtom
+				text={'Venha traçar seu caminho junto com a gente'}
+				type={'h1'}
+			/>
 			<Traco>
 				<img src={traco} alt='risco' />
 			</Traco>

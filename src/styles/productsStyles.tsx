@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 import { IProducts } from '../interfaces/atomsInterfaces'
+import media from './mediaQueries'
 
 export const ProductsContainer = styled.section`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin: 120px 0;
+	${media.sDevice`
+		margin: 80px 0;
+		
+	`}
 `
 
 export const TitleContainer = styled.div`
@@ -14,6 +19,9 @@ export const TitleContainer = styled.div`
 	img {
 		width: 100%;
 	}
+	${media.sDevice`
+		margin-top: 10px;
+	`}
 `
 
 export const CardsContainer = styled.div`
@@ -68,6 +76,11 @@ export const ProductTitle = styled.div`
 	img {
 		max-height: 90%;
 	}
+
+	${media.sDevice`
+		margin-top: 20px;
+
+	`}
 `
 
 export const DescriptionContainer = styled.div`
@@ -231,6 +244,24 @@ export const Description = styled.div`
 		font-weight: 400;
 		line-height: 21px;
 	}
+	${media.sDevice`
+		margin: 20px 10px;
+		padding: 0;
+		text-align: center;
+		span {
+			font-size: 0.9em;
+			line-height: 18px;
+		}
+	`}
+`
+
+export const Options = styled.div`
+	margin-top: 25px;
+	${media.sDevice`
+		span {
+			font-size: .9em !important;
+		}
+	`};
 `
 
 export const Versions = styled.div`
@@ -261,6 +292,26 @@ export const Versions = styled.div`
 			font-weight: 400;
 		}
 	}
+	${media.sDevice`
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100%;
+		& > div {
+			width: 80%;
+		}
+		h5 {
+			font-family: 'Inter';
+			color: #656c78;
+			font-size: 1em;
+		}
+		span {
+			font-family: 'Inter';
+			color: #656c78;
+			font-size: 0.82em;
+		}
+	`}
 `
 
 export const Button = styled.div`
@@ -282,6 +333,9 @@ export const Button = styled.div`
 		line-height: 27px;
 		cursor: pointer;
 	}
+	${media.sDevice`
+		justify-content: center;
+	`}
 `
 
 export const Buttons = styled.div`

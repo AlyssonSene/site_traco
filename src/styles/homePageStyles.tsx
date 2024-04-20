@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import background from '../assets/images/background.png'
+import media from './mediaQueries'
 
 export const MainPage = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 `
 
 export const HomeContainer = styled.div`
@@ -34,6 +36,19 @@ export const CenterContainer = styled.div`
 		text-align: center;
 		color: white;
 	}
+	${media.sDevice`
+		margin: 80px 0;
+		height: 650px;
+		h1 {
+			font-family: 'Montserrat Alternates';
+			font-size: 1.5em;
+			font-weight: 700;
+			line-height: 96px;
+			letter-spacing: 0em;
+			text-align: center;
+			color: white;
+		}
+	`}
 `
 
 export const VideoContainer = styled.div`
@@ -58,6 +73,27 @@ export const VideoContainer = styled.div`
 		cursor: pointer;
 		border-radius: 16px;
 	}
+	${media.sDevice`
+		top: 39em;
+		width: 85%;
+		height: 15em;
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 98% !important;
+			height: 96% !important;
+		}
+		img {
+			border-radius: 16px;
+			width: 15%;
+		}
+		div {
+			div {
+				border-radius: 16px !important;
+			}
+		}
+	`}
 `
 
 export const StudentsDiv = styled.div`
@@ -73,11 +109,28 @@ export const StudentsDiv = styled.div`
 	span {
 		color: #550261;
 		text-align: center;
-		font-size: 16px;
+		font-size: 1rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 24px;
 	}
+	${media.sDevice`
+			display: flex;
+			align-items: center;
+			background: #f3c0e2;
+			height: 32px;
+			width: 65%;
+			flex-shrink: 0;
+			border-radius: 8px;
+			border: 1px;
+			span {
+				color: #550261;
+				font-size: .7rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px;
+			}
+		`}
 `
 
 export const Images = styled.div`
@@ -104,6 +157,15 @@ export const Images = styled.div`
 		left: calc(-19% - 5px);
 		z-index: 9;
 	}
+
+	${media.sDevice`
+	img {
+		width: 20px;
+		height: 20px;
+		border-radius: 24px;
+		border: 1px solid #ffcbed;
+	}
+	`}
 `
 
 export const SloganContainer = styled.div`
@@ -117,6 +179,20 @@ export const SloganContainer = styled.div`
 		color: #fff;
 		font-family: 'Montserrat Alternates';
 	}
+	${media.sDevice`
+			margin-top: 35px;
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			width: auto;
+		h1 {
+			color: #fff;
+			font-family: 'Montserrat Alternates';
+			font-size: 1.8rem;
+			text-align: center;
+			line-height: 30px;
+		}
+	`}
 `
 
 export const Traco = styled.span`
@@ -129,6 +205,17 @@ export const Traco = styled.span`
 	img {
 		width: 90%;
 	}
+	${media.sDevice`
+		position: absolute;
+		top: 44%;
+		left: -11%;
+		transform: rotate(-0.352deg);
+		stroke-width: 8px;
+		stroke: #17e58a;
+		img {
+			width: 48%;
+		}
+	`}
 `
 
 export const SubtitleContainer = styled.div`
@@ -138,11 +225,17 @@ export const SubtitleContainer = styled.div`
 		color: #d1d5dc;
 		text-align: center;
 		font-family: 'Inter';
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 27px;
 	}
+	${media.sDevice`
+		h4 {
+			font-size: 0.9rem;
+			line-height: 20px;
+		}
+	`}
 `
 
 export const ButtonsContainer = styled.div`
@@ -151,13 +244,24 @@ export const ButtonsContainer = styled.div`
 	width: 100%;
 	justify-content: center;
 	margin-top: 60px;
+	${media.sDevice`
+		display: flex;
+		justify-content: space-around;
+		div {
+			width: 43%;
+			border-radius: 16px;
+			img {
+				width: 25px;
+				margin-left: 5px;
+			}
+		}
+	`}
 `
 
 export const AboutMoreButton = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	border-radius: 16px;
 	background: #550261;
 	color: white;
 	margin: 0 50px;
@@ -168,14 +272,26 @@ export const AboutMoreButton = styled.div`
 		height: 75px;
 		background-color: #550261;
 		color: white;
+		border-radius: 16px;
 		text-align: center;
 		font-family: 'Montserrat Alternates';
-		font-size: 18px;
+		font-size: 0.8rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 27px;
 		cursor: pointer;
 	}
+	${media.sDevice`
+		margin: 0;
+		width: 125px;
+		display: flex;
+		align-items: center;
+		button {
+			height: 45px;
+			font-size: .8rem;
+			line-height: 20px;
+		}
+	`}
 `
 
 export const PodcastButton = styled.div`
@@ -200,6 +316,17 @@ export const PodcastButton = styled.div`
 		font-weight: 600;
 		line-height: 27px;
 	}
+	${media.sDevice`
+		margin: 0;
+		width: 125px;
+		display: flex;
+		align-items: center;
+		button {
+			height: 45px;
+			font-size: .8rem;
+			line-height: 20px;
+		}
+	`}
 `
 
 export const SoonContainer = styled.div`

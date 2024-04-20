@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from './mediaQueries'
 
 export const HeaderMenu = styled.div`
 	display: flex;
@@ -10,11 +11,25 @@ export const HeaderMenu = styled.div`
 	top: 0;
 	background-color: white;
 	z-index: 100;
+	${media.sDevice`
+		height: 70px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 20px;
+	`}
 `
 
 export const LogoContainer = styled.div`
 	width: 157px;
 	height: 44px;
+	display: flex;
+	align-items: center;
+	${media.sDevice`
+		img {
+			width: 120px;
+			height: 30px;
+		}	
+	`}
 `
 
 export const OptionsContainer = styled.div`

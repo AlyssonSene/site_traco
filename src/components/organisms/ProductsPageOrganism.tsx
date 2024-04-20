@@ -42,7 +42,7 @@ const ProductsPageOrganism: React.FC = () => {
 					text={` que promovam relações mais saudáveis, a redução de conflitos e maior participação dos estudantes nas atividades escolares. Impactando positivamente na aprendizagem.`}
 				/>
 			</C.Description>
-			<div>
+			<C.Options>
 				<TextAtom
 					type={'span'}
 					text={'A TRAÇO'}
@@ -62,7 +62,7 @@ const ProductsPageOrganism: React.FC = () => {
 						color: '#656c78'
 					}}
 				/>
-			</div>
+			</C.Options>
 			<C.Versions>
 				<div>
 					<TextAtom text={'Consultoria'} type={'h5'} />
