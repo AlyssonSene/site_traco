@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 const media = {
 	//@media Small devices (landscape phones, 576px and up)
 	sDevice: (styles: TemplateStringsArray) => css`
-		@media only screen and (min-width: 450px) {
+		@media only screen and (min-width: 576px) {
 			${styles}
 		}
 	`,

@@ -16,9 +16,13 @@ html::-webkit-scrollbar {
 }
 
 .modal-content {
+	@media only screen and (min-width: 576px) {
+		height: 450px;
+	}
 	border-radius: 26px !important;
 }
 
 iframe {
 	border-radius: 16px;
 }
+

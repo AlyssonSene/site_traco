@@ -207,8 +207,8 @@ export const Traco = styled.span`
 	}
 	${media.sDevice`
 		position: absolute;
-		top: 44%;
-		left: -11%;
+		top: 22%;
+		left: 40%;
 		transform: rotate(-0.352deg);
 		stroke-width: 8px;
 		stroke: #17e58a;
