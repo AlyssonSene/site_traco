@@ -21,7 +21,7 @@ const VideoModalMolecule: React.FC<IVideoModal> = ({ url, thumb }) => {
 				backdrop='static'
 				keyboard={false}
 			>
-				<Modal.Body>
+				<Modal.Body style={{ height: '450px' }}>
 					<CloseButton onClick={handleClose}>
 						<span>x</span>
 					</CloseButton>

@@ -142,6 +142,9 @@ export const VideoContainer = styled.div`
     	object-fit: cover;
     	border-radius: 26px;
 		}
+			.modal-content {
+				height: 450px;
+		}
 	`}
 `
 
