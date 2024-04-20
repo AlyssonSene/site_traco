@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -15,6 +15,20 @@ import OurContentCardsMolecule from '../molecules/OurContentCardsMolecule'
 
 const OurContentOrganism: React.FC = () => {
 	const [isEnd, setIsEnd] = useState(false)
+
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+	useEffect(() => {
+		function handleResize() {
+			setWindowWidth(window.innerWidth)
+		}
+
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
 
 	return (
 		<C.MainContainer className='section' id='news'>
@@ -41,7 +55,7 @@ const OurContentOrganism: React.FC = () => {
 					onReachBeginning={() => setIsEnd(false)}
 					style={{ width: '100vw', display: 'flex' }}
 					modules={[Navigation, Pagination, Scrollbar, A11y]}
-					slidesPerView={3}
+					slidesPerView={windowWidth <= 425 ? 1 : 3}
 					navigation={{ nextEl: '.nextNews', prevEl: '.prevNews' }}
 				>
 					{infos.map((info, index) => (

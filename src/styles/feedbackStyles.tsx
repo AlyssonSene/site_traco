@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import vetor3 from '../assets/images/vetor3.png'
+import media from './mediaQueries'
 
 export const MainContainer = styled.div`
 	width: 100%;
@@ -29,6 +30,9 @@ export const MainContainer = styled.div`
 		color: white;
 		margin: 0 30px;
 	}
+	${media.sDevice`
+		height: 660px;
+	`}
 `
 
 export const HeaderContainer = styled.div`
@@ -56,6 +60,11 @@ export const Text = styled.div`
 		letter-spacing: 0.56px;
 		text-transform: uppercase;
 	}
+
+	${media.sDevice`
+		margin-top: 25px;
+		height: 35px;
+	`}
 `
 
 export const Section = styled.div`
@@ -76,6 +85,21 @@ export const Section = styled.div`
 	.next {
 		width: 30px;
 	}
+
+	${media.sDevice`
+		flex-direction: column;
+		text-align: center;
+		padding: 50px;
+		h1 {
+			font-size: 1.8rem;
+			line-height: 50px;	
+			margin-bottom: 20px;
+		}
+		.prev,
+		.next {
+			width: 25px;
+		}
+	`}
 `
 export const Title = styled.div`
 	width: auto;
@@ -145,4 +169,14 @@ export const VideoCard = styled.div`
 		height: auto;
 		flex-shrink: 0;
 	}
+
+	${media.sDevice`
+		width: 375px;
+		height: 280px;
+		border-radius: 18px;
+		img {
+			width: 355px;
+			height: auto;
+		}
+	`}
 `

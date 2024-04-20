@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from './mediaQueries'
 
 export const MainContainer = styled.section`
 	width: 100%;
@@ -7,9 +8,12 @@ export const MainContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	hr {
-		width: 1760px;
+		width: 90%;
 		height: 1px;
 	}
+	${media.sDevice`
+		height: 950px;
+	`}
 `
 
 export const HeaderContainer = styled.div`
@@ -22,6 +26,16 @@ export const HeaderContainer = styled.div`
 	.nextNews {
 		width: 35px;
 	}
+	${media.sDevice`
+		text-align: center;
+		flex-direction: column;
+		padding: 50px;
+		.prevNews,
+		.nextNews {
+			margin-top: 30px;
+			width: 30px;
+		}
+	`}
 `
 export const Title = styled.div`
 	h1 {
@@ -73,14 +87,23 @@ export const Cards = styled.div`
 	.image {
 		width: 400px;
 	}
+	${media.sDevice`
+		width: 350px;
+		height: 460px;
+		.image{
+			width: 350px
+		}
+	`}
 `
+
 export const TextsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-grow: 1;
 	padding: 32px;
 `
+
 export const TextModal = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -100,6 +123,9 @@ export const TitleCard = styled.div`
 		font-weight: 600;
 		line-height: 27px;
 	}
+	${media.sDevice`
+		font-size: 0.9rem;
+	`}
 `
 
 export const TextCard = styled.div`
@@ -112,6 +138,11 @@ export const TextCard = styled.div`
 		font-weight: 500;
 		line-height: 27px;
 	}
+	${media.sDevice`
+		h5 {
+			font-size: 0.8rem;
+		}
+	`}
 `
 export const CloseButton = styled.div`
 	position: absolute;
@@ -149,7 +180,7 @@ export const Footer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 120px;
+	height: 135px;
 	width: 100%;
 `
 
@@ -166,6 +197,17 @@ export const FooterText = styled.div`
 		font-weight: 500;
 		line-height: 24px;
 	}
+	${media.sDevice`
+		flex-direction: column;
+		img {
+			width: 115px;
+			margin: 5px 0;
+		}
+		span {
+			font-size: 0.5rem;
+			margin: 5px 0;
+		}
+	`}
 `
 
 export const FooterIcons = styled.div`
@@ -185,6 +227,14 @@ export const FooterIcons = styled.div`
 		font-weight: 500;
 		line-height: 24px;
 	}
+	${media.sDevice`
+		flex-direction: column;
+		align-items: flex-start;
+		span {
+			font-size: 0.8rem;
+			margin: 5px 0;
+		}
+	`}
 `
 
 export const FooterIcon = styled.div`
@@ -202,4 +252,13 @@ export const FooterIcon = styled.div`
 		width: 24px;
 		height: 24px;
 	}
+
+	${media.sDevice`
+		width: 30px;
+		height: 30px;
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	`}
 `

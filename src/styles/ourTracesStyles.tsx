@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { ITraceCard } from '../interfaces/atomsInterfaces'
+import media from './mediaQueries'
 
 export const MainContainer = styled.section`
 	display: flex;
@@ -7,12 +8,19 @@ export const MainContainer = styled.section`
 	margin-top: 115px;
 	width: auto;
 	height: 1359px;
+	${media.sDevice`
+		margin-top: 50px;
+		margin-bottom: 250px;
+	`}
 `
 
 export const Header = styled.div`
 	display: flex;
 	width: 100%;
 	align-items: center;
+	${media.sDevice`
+		justify-content: center;
+	`}
 `
 
 export const HeaderTitle = styled.div`
@@ -35,12 +43,23 @@ export const HeaderTitle = styled.div`
 		letter-spacing: 0.56px;
 		text-transform: uppercase;
 	}
+	${media.sDevice`
+		margin: 0;
+		height: 35px;
+		width: 219px;
+		span {
+			font-size: 0.75rem;
+		}
+	`}
 `
 
 export const Section = styled.div`
 	display: flex;
 	width: 100%;
 	margin-bottom: 100px;
+	${media.sDevice`
+		margin-bottom: 50px;
+	`}
 `
 
 export const Title = styled.div`
@@ -62,6 +81,24 @@ export const Title = styled.div`
 		width: 397px;
 		height: 80px;
 	}
+	${media.sDevice`
+		width: auto;
+		margin-left: 0;
+		text-align: center;
+		h1 {
+			font-size: 1.9rem;
+			line-height: 50px;
+			margin-top: 35px;
+			padding: 10px;
+		}
+		img {
+			position: absolute;
+    	top: 63%;
+    	left: calc(50% - 100px);
+    	width: 215px;
+    	height: 80px;
+		}
+	`}
 `
 
 export const CenterContainer = styled.div`
@@ -69,12 +106,18 @@ export const CenterContainer = styled.div`
 	height: 744px;
 	flex-shrink: 0;
 	justify-content: space-evenly;
+	${media.sDevice`
+		flex-wrap: wrap;
+	`}
 `
 export const TracesContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 744px;
+	${media.sDevice`
+			width: 100%;
+	`}
 `
 
 export const VideoContainer = styled.div`
@@ -87,9 +130,19 @@ export const VideoContainer = styled.div`
 	background: rgba(58, 66, 80, 0.2);
 	cursor: pointer;
 	img {
-		width: 401px;
+		width: auto;
 		height: 712px;
 	}
+	${media.sDevice`
+		width: 400px;
+    height: 545px;
+		img {
+			width: 375px;
+   		height: 520px;
+    	object-fit: cover;
+    	border-radius: 26px;
+		}
+	`}
 `
 
 export const CloseButton = styled.div`
@@ -141,6 +194,10 @@ export const TraceCards = styled.div<ITraceCard>`
 			border: 1px solid #FA39B9;
 			background: #FFECF8;
   `}
+
+	${media.sDevice`
+		width: 90%;
+	`}
 `
 
 export const EmojContainer = styled.div<ITraceCard>`
@@ -160,6 +217,11 @@ export const EmojContainer = styled.div<ITraceCard>`
 		`
 			background: #FFCBED;
   `}
+	${media.sDevice`
+		margin: 10px;
+		width: 70px;
+		height: 70px;
+	`}
 `
 export const TextContainer = styled.div`
 	width: 782px;
@@ -179,4 +241,17 @@ export const TextContainer = styled.div`
 		font-weight: 500;
 		line-height: 27px;
 	}
+
+	${media.sDevice`
+		width: 70%;
+		text-align: center;
+		h2 {
+			font-size: 1rem;
+			margin: 0;
+		}
+		span {
+			font-size: 0.75rem;
+			letter-spacing: 0.2px;
+		}
+	`}
 `

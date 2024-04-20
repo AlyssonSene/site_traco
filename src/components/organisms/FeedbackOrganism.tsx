@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Modal } from 'react-bootstrap'
 import ReactPlayer from 'react-player'
 import 'swiper/css'
@@ -37,6 +37,19 @@ const FeedbackOrganism: React.FC = () => {
 	const [show, setShow] = useState(false)
 	const handleClose = () => setShow(false)
 	const [isEnd, setIsEnd] = useState(false)
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+	useEffect(() => {
+		function handleResize() {
+			setWindowWidth(window.innerWidth)
+		}
+
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
 	return (
 		<C.MainContainer>
 			<div>
@@ -65,14 +78,13 @@ const FeedbackOrganism: React.FC = () => {
 					</C.Buttons>
 				</C.Section>
 			</div>
-
 			<Swiper
 				onReachEnd={() => setIsEnd(true)}
 				onReachBeginning={() => setIsEnd(false)}
 				style={{ width: '100vw', display: 'flex' }}
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={5}
-				slidesPerView={3}
+				slidesPerView={windowWidth <= 425 ? 1 : 3}
 				navigation={{ nextEl: '.next', prevEl: '.prev' }}
 			>
 				{videos.map((video, index) => (
